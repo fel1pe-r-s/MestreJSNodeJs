@@ -51,11 +51,21 @@ CONCEPTS = {
     "Tailwind": {"deps": ["tailwindcss"], "files": ["tailwind.config.js", "tailwind.config.ts"]},
     "Docker": {"files": ["Dockerfile", "docker-compose.yml", "docker-compose.yaml"]},
     "GitHub Actions": {"folders": [".github/workflows"]},
-    "Git": {"folders": [".git"]}
+    "Git": {"folders": [".git"]},
+
+    # STATIC / OTHER LANGUAGES
+    "Html": {"ext": [".html"]},
+    "CSS": {"ext": [".css", ".scss", ".sass"]},
+    "Python": {"ext": [".py"], "files": ["requirements.txt", "Pipfile"]},
+    "Shell": {"ext": [".sh"]},
+    "Markdown": {"ext": [".md"]}
 }
 
 def scan_project(project_path):
     detected_tags = set()
+    
+    # Default tags if nothing specific found maybe?
+    # No, let's strictly detect.
     
     # cache file list for speed
     all_files = []
