@@ -37,6 +37,50 @@ Recursos gerais, backups e arquivos que não se encaixam nas outras categorias.
 
 ---
 
+
+
+## 🚀 Projetos (Overview)
+- **[ApiWithBun](01_Projetos/ApiWithBun/)**
+- **[CallScheduleApp](01_Projetos/CallScheduleApp/)**
+- **[CalligraphyTrainingApp](01_Projetos/CalligraphyTrainingApp/)**
+- **[CleanDDD_Core](01_Projetos/CleanDDD_Core/)**
+- **[Content_Planning](01_Projetos/Content_Planning/)**
+- **[DailyLogger](01_Projetos/DailyLogger/)**
+- **[DesignSystem_Lib](01_Projetos/DesignSystem_Lib/)**
+- **[DevFinance](01_Projetos/DevFinance/)**
+- **[DevStore_Ecom](01_Projetos/DevStore_Ecom/)**
+- **[FelipeRS_Profile](01_Projetos/FelipeRS_Profile/)**
+- **[Felipe_Website](01_Projetos/Felipe_Website/)**
+- **[FindYourDuo_App](01_Projetos/FindYourDuo_App/)**
+- **[FocusTimeChallenge](01_Projetos/FocusTimeChallenge/)**
+- **[FoodCourtApp](01_Projetos/FoodCourtApp/)**
+- **[GDashChallenge](01_Projetos/GDashChallenge/)**
+- **[GeminiVision_AI](01_Projetos/GeminiVision_AI/)**
+- **[GymPass_App](01_Projetos/GymPass_App/)**
+- **[IgniteShop](01_Projetos/IgniteShop/)**
+- **[ImageReader_Tool](01_Projetos/ImageReader_Tool/)**
+- **[Journey_Plannner](01_Projetos/Journey_Plannner/)**
+- **[MangaGenAI](01_Projetos/MangaGenAI/)**
+- **[MovieNotesAPI](01_Projetos/MovieNotesAPI/)**
+- **[NestCleanArchitecture](01_Projetos/NestCleanArchitecture/)**
+- **[NestCleanRocketseat](01_Projetos/NestCleanRocketseat/)**
+- **[NextJS_Fundamentals](01_Projetos/NextJS_Fundamentals/)**
+- **[NodeJS_Studies](01_Projetos/NodeJS_Studies/)**
+- **[Notes_App](01_Projetos/Notes_App/)**
+- **[PizzaShop_Web](01_Projetos/PizzaShop_Web/)**
+- **[PizzaShoppingAPI](01_Projetos/PizzaShoppingAPI/)**
+- **[PizzaSmart_Specs](01_Projetos/PizzaSmart_Specs/)**
+- **[Portfolio_Docs](01_Projetos/Portfolio_Docs/)**
+- **[ReactStateManagement](01_Projetos/ReactStateManagement/)**
+- **[RestaurantsApp](01_Projetos/RestaurantsApp/)**
+- **[SaaS_RBAC_System](01_Projetos/SaaS_RBAC_System/)**
+- **[ServerlessTesting](01_Projetos/ServerlessTesting/)**
+- **[SmartPizza_App](01_Projetos/SmartPizza_App/)**
+- **[TailwindMastery](01_Projetos/TailwindMastery/)**
+- **[TaskManagementApp](01_Projetos/TaskManagementApp/)**
+- **[WebDevChallenge](01_Projetos/WebDevChallenge/)**
+- **[YourHotel_App](01_Projetos/YourHotel_App/)**
+
 ## Metodologia de Uso (Obsidian)
 
 * **Tags**: Utilize tags (`#tag`) no início dos arquivos para conectar conteúdos.

@@ -1,6 +1,6 @@
 import os
 import json
-import glob
+import re
 
 ROOT_DIR = "/home/felipe/MestreJSNodeJs"
 PROJECTS_DIR = os.path.join(ROOT_DIR, "01_Projetos")
@@ -24,6 +24,7 @@ CONCEPTS = {
     "Deno": {"files": ["deno.json", "import_map.json"]},
     
     # DATABASE
+    "Database": {"deps": ["pg", "mysql", "mongodb", "sqlite3", "mongoose", "typeorm", "prisma", "sequelize"], "folders": ["database", "db", "migrations"]},
     "Prisma": {"deps": ["prisma", "@prisma/client"], "folders": ["prisma"]},
     "Postgresql": {"deps": ["pg"]},
     
@@ -40,7 +41,7 @@ CONCEPTS = {
     "Monorepo": {"files": ["turbo.json", "lerna.json", "pnpm-workspace.yaml"]},
     
     # AUTH & SECURITY
-    "Autentica\u00e7\u00e3o&autoriza\u00e7\u00e3o": {"deps": ["jsonwebtoken", "bcrypt", "passport", "next-auth"]},
+    "Autenticação&autorização": {"deps": ["jsonwebtoken", "bcrypt", "passport", "next-auth"]},
     "Permissionamento": {"deps": ["casl"], "files": ["permissions.ts", "abilities.ts", "roles.ts"]},
     "JTW": {"deps": ["jsonwebtoken"]},
     "Next-Auth": {"deps": ["next-auth"]},
@@ -68,36 +69,29 @@ CONCEPTS = {
 
 def scan_project(project_path):
     detected_tags = set()
-    
-    # Traverse to find all package.json files (Monorepo support)
     package_jsons = []
     
     for root, dirs, files in os.walk(project_path):
-        # Optimization: Skip node_modules and .git
         if "node_modules" in dirs: dirs.remove("node_modules")
         if ".git" in dirs: dirs.remove(".git")
         
         rel_root = os.path.relpath(root, project_path)
         
-        # 1. Check Folders (Architecture/Patterns)
+        # 1. Check Folders
         for d in dirs:
             rel_folder = os.path.join(rel_root, d)
             if rel_root == ".": rel_folder = d
-            
             for tag, rules in CONCEPTS.items():
                 if "folders" in rules:
                     for req_folder in rules["folders"]:
                         if req_folder in rel_folder:
                             detected_tags.add(tag)
 
-        # 2. Check Files (Exts, Filenames, Package.json)
+        # 2. Check Files
         for f in files:
             _, ext = os.path.splitext(f)
-            
-            # Map package.json for later check
             if f == "package.json":
                 package_jsons.append(os.path.join(root, f))
-            
             for tag, rules in CONCEPTS.items():
                 if "ext" in rules:
                     if ext in rules["ext"]: detected_tags.add(tag)
@@ -106,7 +100,7 @@ def scan_project(project_path):
                         if req_file == f: detected_tags.add(tag)
                         elif req_file.startswith("*") and f.endswith(req_file[1:]): detected_tags.add(tag)
 
-    # 3. Check Dependencies (Merged from ALL package.jsons found)
+    # 3. Check Dependencies
     all_deps = set()
     for p_json in package_jsons:
         try:
@@ -116,22 +110,19 @@ def scan_project(project_path):
                 all_deps.update(deps)
         except: pass
     
-    # Heuristics on deps
     for tag, rules in CONCEPTS.items():
         if "deps" in rules:
             for req_dep in rules["deps"]:
-                # Check for substring match (e.g. 'react' matches 'react-dom' if lenient, but better exact or known list)
-                # Let's do partial match for robustness
                 for d in all_deps:
                     if req_dep in d: 
                         detected_tags.add(tag)
                         break
 
-    # 4. Keyword Match in Project Name (Final fallback)
+    # 4. Keyword Match
     p_name = os.path.basename(project_path).lower()
     if "saas" in p_name: detected_tags.add("SaaS")
     if "rbac" in p_name: detected_tags.add("Permissionamento")
-    if "ecommerce" in p_name or "shop" in p_name or "store" in p_name: detected_tags.add("SaaS") # Generic business
+    if "ecommerce" in p_name or "shop" in p_name or "store" in p_name: detected_tags.add("SaaS")
 
     return list(detected_tags)
 
@@ -145,21 +136,18 @@ def update_markdown(file_path, new_tags):
         lines = content.split('\n')
         tag_line_idx = -1
         
-        # Parse existing tags
         for i, line in enumerate(lines):
             if line.strip().startswith("**Tags**:") or line.strip().startswith("Tags:"):
                 tag_line_idx = i
-                # Extract existing tags
                 parts = line.split(":")
                 if len(parts) > 1:
                     raw = parts[1].strip()
                     existing_tags = [t.strip() for t in raw.split(" ") if t.startswith("#")]
                 break
         
-        # Merge tags
         updated_tags = set(existing_tags)
         for t in new_tags:
-            tag_str = f"#{t.replace(' ', '')}" # Ensure no spaces in hash tags
+            tag_str = f"#{t.replace(' ', '')}"
             updated_tags.add(tag_str)
             
         final_tag_str = " ".join(sorted(list(updated_tags)))
@@ -170,7 +158,6 @@ def update_markdown(file_path, new_tags):
             else:
                 lines[tag_line_idx] = f"Tags: {final_tag_str}"
         else:
-            # Insert new line
             if len(lines) > 0 and lines[0].startswith("#"):
                  lines.insert(1, f"\n**Tags**: {final_tag_str}")
             else:
@@ -178,121 +165,119 @@ def update_markdown(file_path, new_tags):
         
         with open(file_path, "w") as f:
             f.write("\n".join(lines))
-        
-        # print(f"Updated {os.path.basename(file_path)} with {len(updated_tags)} tags")
-
     except Exception as e:
         print(f"Error updating {file_path}: {e}")
 
 def update_concept_file(concept, projects):
-    """Updates the Concept MD file with a list of projects using it."""
-    # 1. Find the file for this concept
-    concept_file = None
+    concept_files = []
     for root, _, files in os.walk(os.path.join(ROOT_DIR, "02_Areas")):
         for f in files:
-            # Match filename (e.g. "React.md" matches concept "React")
             if f.lower() == f"{concept.lower()}.md":
-                concept_file = os.path.join(root, f)
-                break
-            # Handle variations if needed?
-        if concept_file: break
+                concept_files.append(os.path.join(root, f))
     
-    if not concept_file:
-         # print(f"Warning: No study note found for concept '{concept}'")
+    if not concept_files:
          return
 
-    try:
-        with open(concept_file, 'r') as f:
-            content = f.read()
+    for concept_file in concept_files:
+        try:
+            with open(concept_file, 'r') as f:
+                content = f.read()
+            header = "## 🛠 Projects applying this concept"
+            new_links = []
+            for p_name in sorted(projects):
+                p_path = os.path.join(PROJECTS_DIR, p_name)
+                rel_path = os.path.relpath(p_path, os.path.dirname(concept_file))
+                link = f"- [{p_name}]({rel_path})"
+                new_links.append(link)
             
-        # 2. Append/Update "Projects applying this concept" section
-        header = "## 🛠 Projects applying this concept"
-        
-        # Build the list of links
-        # Format: - [ProjectName](../../01_Projetos/ProjectName)
-        new_links = []
-        for p_name in sorted(projects):
-            # Calculate relative path from concept file to project dir
-            # But simpler: use absolute path or consistent relative path?
-            # Obsidian prefers [[Link]] or relative standard links.
-            # Let's try standard relative links.
+            block = f"\n\n{header}\n" + "\n".join(new_links) + "\n"
             
-            p_path = os.path.join(PROJECTS_DIR, p_name)
-            rel_path = os.path.relpath(p_path, os.path.dirname(concept_file))
-            
-            link = f"- [{p_name}]({rel_path})"
-            new_links.append(link)
-            
-        block = f"\n\n{header}\n" + "\n".join(new_links) + "\n"
-        
-        if header in content:
-            # Replace existing section
-            # Heuristic: Find header, read until next header or EOF
-            parts = content.split(header)
-            pre = parts[0]
-            
-            # Find start of next section in post
-            post = parts[1]
-            next_section_idx = -1
-            lines = post.split('\n')
-            
-            # Skip first empty lines
-            for i, line in enumerate(lines):
-                if line.startswith("#") and i > 0: # Next header
-                    next_section_idx = i
-                    break
-            
-            if next_section_idx != -1:
-                # Keep the rest
-                rest = "\n".join(lines[next_section_idx:])
-                new_content = pre + header + "\n" + "\n".join(new_links) + "\n" + rest
+            if header in content:
+                parts = content.split(header)
+                pre = parts[0]
+                post = parts[1]
+                lines = post.split('\n')
+                next_section_idx = -1
+                for i, line in enumerate(lines):
+                    if line.startswith("#") and i > 0:
+                        next_section_idx = i
+                        break
+                if next_section_idx != -1:
+                    rest = "\n".join(lines[next_section_idx:])
+                    new_content = pre + header + "\n" + "\n".join(new_links) + "\n" + rest
+                else:
+                    new_content = pre + header + "\n" + "\n".join(new_links) + "\n"
             else:
-                # EOF
-                new_content = pre + header + "\n" + "\n".join(new_links) + "\n"
+                new_content = content + block
+                
+            with open(concept_file, 'w') as f:
+                f.write(new_content)
+            print(f"Linked {len(projects)} projects to {os.path.relpath(concept_file, ROOT_DIR)}")
+        except Exception as e:
+            print(f"Error linking projects to {concept_file}: {e}")
+
+def update_root_readme(all_projects):
+    readme_path = os.path.join(ROOT_DIR, "README.md")
+    if not os.path.exists(readme_path): return
+    try:
+        with open(readme_path, 'r') as f:
+            content = f.read()
+        header = "## 🚀 Projetos (Overview)"
+        links = []
+        for p in sorted(all_projects):
+            links.append(f"- **[{p}](01_Projetos/{p}/)**")
+        block = f"\n\n{header}\n" + "\n".join(links) + "\n"
+        if header in content:
+             parts = content.split(header)
+             pre = parts[0]
+             post = parts[1]
+             lines = post.split('\n')
+             next_section_idx = -1
+             for i, line in enumerate(lines):
+                 if line.startswith("---") or (line.startswith("#") and i > 0):
+                     next_section_idx = i
+                     break
+             if next_section_idx != -1:
+                 rest = "\n".join(lines[next_section_idx:])
+                 new_content = pre + header + "\n" + "\n".join(links) + "\n" + rest
+             else:
+                 new_content = pre + header + "\n" + "\n".join(links) + "\n"
         else:
-            # Append to end
-            new_content = content + block
-            
-        with open(concept_file, 'w') as f:
+             if "## Metodologia de Uso" in content:
+                 parts = content.split("## Metodologia de Uso")
+                 new_content = parts[0] + block + "\n## Metodologia de Uso" + parts[1]
+             else:
+                 new_content = content + block
+        with open(readme_path, 'w') as f:
             f.write(new_content)
-        print(f"Linked {len(projects)} projects to {os.path.basename(concept_file)}")
-            
+        print("Root README.md updated with all projects.")
     except Exception as e:
-        print(f"Error linking projects to {concept}: {e}")
+        print(f"Error updating root README: {e}")
 
 def main():
     print("Starting Deep Semantic Tagging (Bidirectional)...")
-    
-    # Store reverse map: Concept -> List[ProjectName]
     concept_map = {k: [] for k in CONCEPTS.keys()}
+    all_projects = []
     
     for project in sorted(os.listdir(PROJECTS_DIR)):
         p_path = os.path.join(PROJECTS_DIR, project)
         if not os.path.isdir(p_path): continue
+        all_projects.append(project)
         
-        # print(f"Scanning {project}...")
         tags = scan_project(p_path)
-        
         if tags:
-            # 1. Forward Tagging (Project -> Concept)
             readme = os.path.join(p_path, "README.md")
             if os.path.exists(readme):
                 update_markdown(readme, tags)
-            
-            card = os.path.join(ROOT_DIR, "00_Entrada", f"Analise_{project}.md")
-            if os.path.exists(card):
-                update_markdown(card, tags)
-                
-            # 2. Collect for Reverse Tagging (Concept -> Project)
             for t in tags:
                 if t not in concept_map: concept_map[t] = []
                 concept_map[t].append(project)
 
-    # 3. Apply Reverse Linking
     print("Applying Reverse Links (Study Material -> Projects)...")
     for concept, projects in concept_map.items():
         if projects:
             update_concept_file(concept, projects)
+    update_root_readme(all_projects)
 
 if __name__ == "__main__":
     main()

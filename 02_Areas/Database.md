@@ -1,0 +1,21 @@
+
+
+## 🛠 Projects applying this concept
+- [ApiWithBun](../01_Projetos/ApiWithBun)
+- [CallScheduleApp](../01_Projetos/CallScheduleApp)
+- [FindYourDuo_App](../01_Projetos/FindYourDuo_App)
+- [FoodCourtApp](../01_Projetos/FoodCourtApp)
+- [GDashChallenge](../01_Projetos/GDashChallenge)
+- [GymPass_App](../01_Projetos/GymPass_App)
+- [ImageReader_Tool](../01_Projetos/ImageReader_Tool)
+- [Journey_Plannner](../01_Projetos/Journey_Plannner)
+- [MovieNotesAPI](../01_Projetos/MovieNotesAPI)
+- [NestCleanArchitecture](../01_Projetos/NestCleanArchitecture)
+- [NestCleanRocketseat](../01_Projetos/NestCleanRocketseat)
+- [NodeJS_Studies](../01_Projetos/NodeJS_Studies)
+- [PizzaShoppingAPI](../01_Projetos/PizzaShoppingAPI)
+- [RestaurantsApp](../01_Projetos/RestaurantsApp)
+- [SaaS_RBAC_System](../01_Projetos/SaaS_RBAC_System)
+- [SmartPizza_App](../01_Projetos/SmartPizza_App)
+- [TailwindMastery](../01_Projetos/TailwindMastery)
+- [TaskManagementApp](../01_Projetos/TaskManagementApp)
