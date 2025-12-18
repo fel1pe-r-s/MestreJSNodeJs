@@ -1,4 +1,4 @@
-# Relatório de Segurança e Dependências
+#Entrada # Relatório de Segurança e Dependências
 **Data**: 2025-12-17T11:28:59.786158
 
 

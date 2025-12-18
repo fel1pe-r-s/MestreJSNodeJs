@@ -1,4 +1,4 @@
-# Análise: devstore
+#Entrada # Análise: devstore
 
 **Tags**: `#Inbox/Project` #NextJS #React #TypeScript #Tailwind
 **Data**: 2025-12-17

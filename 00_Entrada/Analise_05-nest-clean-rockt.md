@@ -1,4 +1,4 @@
-# Análise: 05-nest-clean-rockt
+#Entrada # Análise: 05-nest-clean-rockt
 
 **Tags**: `#Inbox/Project` #NestJS #TypeScript #Prisma
 **Data**: 2025-12-17

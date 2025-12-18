@@ -1,4 +1,4 @@
-#Postagens #projetos 
+#Content_Planning #Postagens #projetos 
 ### Manual
 
 Ja parou para pensa porque você faz cursos assiste videos estuda e estuda e não se sente capas ou ate mesmo não consegue guarda o conhecimento muito menos explicar o que você sabe fazer.

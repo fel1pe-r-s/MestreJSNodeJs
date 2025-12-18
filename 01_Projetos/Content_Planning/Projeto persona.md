@@ -1,4 +1,4 @@
-#Postagens
+#Content_Planning #Postagens
 
 
 [x] Configuração de perfil

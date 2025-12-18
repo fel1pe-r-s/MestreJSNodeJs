@@ -1,4 +1,4 @@
-# Análise: ignite-shop
+#Entrada # Análise: ignite-shop
 
 **Tags**: `#Inbox/Project` #NextJS #React #TypeScript
 **Data**: 2025-12-17

@@ -1,4 +1,4 @@
-# Análise: mangar-gen-ai
+#Entrada # Análise: mangar-gen-ai
 
 **Tags**: `#Inbox/Project` #React #TypeScript
 **Data**: 2025-12-17

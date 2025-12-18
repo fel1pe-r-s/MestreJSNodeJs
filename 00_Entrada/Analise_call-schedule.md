@@ -1,4 +1,4 @@
-# Análise: call-schedule
+#Entrada # Análise: call-schedule
 
 **Tags**: `#Inbox/Project` #NextJS #React #TypeScript #Prisma
 **Data**: 2025-12-17

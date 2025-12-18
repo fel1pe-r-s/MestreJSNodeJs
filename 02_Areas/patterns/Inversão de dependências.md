@@ -1,4 +1,4 @@
-# Inversão de Dependência (DIP)
+#patterns # Inversão de Dependência (DIP)
 
 **Tags**: `#Patterns` `#SOLID` `#Architecture`
 **Data**: 2024-12-17

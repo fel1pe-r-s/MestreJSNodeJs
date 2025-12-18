@@ -1,4 +1,4 @@
-#Postagens
+#Content_Planning #Postagens
 
 
 Claro! Aqui estão sugestões de títulos e descrições para cada uma das redes sociais mencionadas:

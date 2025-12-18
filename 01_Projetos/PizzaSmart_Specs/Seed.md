@@ -1,4 +1,4 @@
-#PizzaSmart
+#PizzaSmart_Specs #PizzaSmart
 
 [[Prisma]]
 [[PizzaSmart]]

@@ -1,4 +1,4 @@
-# Análise: image-reader
+#Entrada # Análise: image-reader
 
 **Tags**: `#Inbox/Project` #Express #TypeScript #Postgres
 **Data**: 2025-12-17

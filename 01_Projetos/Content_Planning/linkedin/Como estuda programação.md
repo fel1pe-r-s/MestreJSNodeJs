@@ -1,4 +1,4 @@
-#Postagens
+#Content_Planning #Postagens
 
 Claro! Aqui está uma versão aprimorada do seu script para uma postagem no LinkedIn:
 

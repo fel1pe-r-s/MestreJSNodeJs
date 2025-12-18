@@ -1,4 +1,4 @@
-#Postagens
+#Content_Planning #Postagens
 
 Claro! Aqui está uma versão aprimorada do seu script para uma postagem no Instagram, adaptando o tom e o formato para torná-lo mais visual e envolvente:
 

@@ -1,4 +1,4 @@
-#Postagens
+#Content_Planning #Postagens
 
 Claro! Aqui está uma versão do seu texto adaptada para o Twitter, mantendo a concisão e o foco nas ideias principais, já que o espaço é limitado:
 

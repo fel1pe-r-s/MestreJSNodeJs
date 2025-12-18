@@ -1,4 +1,4 @@
-# Análise: fundamentos-nextjs
+#Entrada # Análise: fundamentos-nextjs
 
 **Tags**: `#Inbox/Project` #NextJS #React #TypeScript #Tailwind
 **Data**: 2025-12-17

@@ -1,4 +1,4 @@
-# Análise: pizzaShopping-api
+#Entrada # Análise: pizzaShopping-api
 
 **Tags**: `#Inbox/Project` #JavaScript #Postgres
 **Data**: 2025-12-17

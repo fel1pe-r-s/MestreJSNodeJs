@@ -1,4 +1,4 @@
-# Análise: pizzashop
+#Entrada # Análise: pizzashop
 
 **Tags**: `#Inbox/Project` #React #TypeScript #Tailwind
 **Data**: 2025-12-17

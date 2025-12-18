@@ -1,4 +1,4 @@
-# Análise: the-smart-pizza
+#Entrada # Análise: the-smart-pizza
 
 **Tags**: `#Inbox/Project` #NextJS #React #TypeScript #Prisma #Tailwind
 **Data**: 2025-12-17

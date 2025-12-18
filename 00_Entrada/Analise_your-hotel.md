@@ -1,4 +1,4 @@
-# Análise: your-hotel
+#Entrada # Análise: your-hotel
 
 **Tags**: `#Inbox/Project` #NextJS #React #TypeScript #Tailwind
 **Data**: 2025-12-17
