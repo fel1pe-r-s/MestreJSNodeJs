@@ -41,6 +41,7 @@ CONCEPTS = {
     
     # AUTH & SECURITY
     "Autentica\u00e7\u00e3o&autoriza\u00e7\u00e3o": {"deps": ["jsonwebtoken", "bcrypt", "passport", "next-auth"]},
+    "Permissionamento": {"deps": ["casl"], "files": ["permissions.ts", "abilities.ts", "roles.ts"]},
     "JTW": {"deps": ["jsonwebtoken"]},
     "Next-Auth": {"deps": ["next-auth"]},
     
@@ -53,6 +54,10 @@ CONCEPTS = {
     "GitHub Actions": {"folders": [".github/workflows"]},
     "Git": {"folders": [".git"]},
 
+    # BUSINESS / DOMAIN
+    "SaaS": {"files": ["saas.config.ts"], "deps": ["stripe"], "folders": ["subscriptions", "billing"]},
+    "Micro SaaS": {"deps": ["stripe", "lemonsqueezy"]},
+
     # STATIC / OTHER LANGUAGES
     "Html": {"ext": [".html"]},
     "CSS": {"ext": [".css", ".scss", ".sass"]},
@@ -64,65 +69,69 @@ CONCEPTS = {
 def scan_project(project_path):
     detected_tags = set()
     
-    # Default tags if nothing specific found maybe?
-    # No, let's strictly detect.
+    # Traverse to find all package.json files (Monorepo support)
+    package_jsons = []
     
-    # cache file list for speed
-    all_files = []
     for root, dirs, files in os.walk(project_path):
-        # Skip node_modules for file searching to save time/noise
-        if "node_modules" in dirs:
-            dirs.remove("node_modules")
-        if ".git" in dirs:
-            dirs.remove(".git")
-            
+        # Optimization: Skip node_modules and .git
+        if "node_modules" in dirs: dirs.remove("node_modules")
+        if ".git" in dirs: dirs.remove(".git")
+        
         rel_root = os.path.relpath(root, project_path)
         
-        # Check Folders
+        # 1. Check Folders (Architecture/Patterns)
         for d in dirs:
             rel_folder = os.path.join(rel_root, d)
             if rel_root == ".": rel_folder = d
             
-            # Simple check: does any concept require this folder?
             for tag, rules in CONCEPTS.items():
                 if "folders" in rules:
                     for req_folder in rules["folders"]:
-                        if req_folder in rel_folder: # Partial match e.g. src/domain matched by src/domain
+                        if req_folder in rel_folder:
                             detected_tags.add(tag)
 
-        # Check Files and Extensions
+        # 2. Check Files (Exts, Filenames, Package.json)
         for f in files:
-            all_files.append(f)
             _, ext = os.path.splitext(f)
             
+            # Map package.json for later check
+            if f == "package.json":
+                package_jsons.append(os.path.join(root, f))
+            
             for tag, rules in CONCEPTS.items():
-                # Check Extensions
                 if "ext" in rules:
-                    if ext in rules["ext"]:
-                        detected_tags.add(tag)
-                
-                # Check Filenames (Glob-ish)
+                    if ext in rules["ext"]: detected_tags.add(tag)
                 if "files" in rules:
                     for req_file in rules["files"]:
-                        if req_file == f: # Exact match
-                            detected_tags.add(tag)
-                        elif req_file.startswith("*") and f.endswith(req_file[1:]): # Suffix match
-                            detected_tags.add(tag)
+                        if req_file == f: detected_tags.add(tag)
+                        elif req_file.startswith("*") and f.endswith(req_file[1:]): detected_tags.add(tag)
 
-    # Check Dependencies (package.json)
-    pkg_path = os.path.join(project_path, "package.json")
-    if os.path.exists(pkg_path):
+    # 3. Check Dependencies (Merged from ALL package.jsons found)
+    all_deps = set()
+    for p_json in package_jsons:
         try:
-            with open(pkg_path) as f:
+            with open(p_json) as f:
                 data = json.load(f)
                 deps = list(data.get("dependencies", {}).keys()) + list(data.get("devDependencies", {}).keys())
-                
-                for tag, rules in CONCEPTS.items():
-                    if "deps" in rules:
-                        for req_dep in rules["deps"]:
-                            if any(req_dep in d for d in deps): # Substring match for scoped pkgs
-                                detected_tags.add(tag)
+                all_deps.update(deps)
         except: pass
+    
+    # Heuristics on deps
+    for tag, rules in CONCEPTS.items():
+        if "deps" in rules:
+            for req_dep in rules["deps"]:
+                # Check for substring match (e.g. 'react' matches 'react-dom' if lenient, but better exact or known list)
+                # Let's do partial match for robustness
+                for d in all_deps:
+                    if req_dep in d: 
+                        detected_tags.add(tag)
+                        break
+
+    # 4. Keyword Match in Project Name (Final fallback)
+    p_name = os.path.basename(project_path).lower()
+    if "saas" in p_name: detected_tags.add("SaaS")
+    if "rbac" in p_name: detected_tags.add("Permissionamento")
+    if "ecommerce" in p_name or "shop" in p_name or "store" in p_name: detected_tags.add("SaaS") # Generic business
 
     return list(detected_tags)
 
