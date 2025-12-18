@@ -6,7 +6,7 @@ Exemplo uma ferramenta para agendamento de serviço.
 
 
 
-![[Pasted image 20240929154642.png]]
+![[MicroSaaS_Concept_1.png]]
 
 Cliente alvo:
 	Salão de beleza e cabelereiros
@@ -49,4 +49,4 @@ Ferramentas
 
 
 
-![[Pasted image 20240929164820.png]]
+![[MicroSaaS_Concept_2.png]]

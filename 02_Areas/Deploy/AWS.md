@@ -1,7 +1,7 @@
 #Deploy 
 # Entendendo contêiner e deploy
 
-![Network](Pasted%20image%2020240928124840.png)
+![Network](Container_Deploy_Network.png)
 
 ## Deploy aws [youtube](https://www.youtube.com/watch?v=bVzjKJL2b2M&list=TLPQMjgwOTIwMjSvLk9_EGw1Yg&index=10)
 - acesse a EC2 

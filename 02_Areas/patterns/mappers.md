@@ -14,4 +14,4 @@ já na camada HTTP onde  retornamos os dados dessa entidade podemos ter outra fo
 
 Para comunicação entre essas camada podemos usar os mappers convertendo o formato que a entidade é representada em outra camada.
 
-![](Pasted%20image%2020241007093448.png)
+![](Mappers_Layer_Conversion.png)

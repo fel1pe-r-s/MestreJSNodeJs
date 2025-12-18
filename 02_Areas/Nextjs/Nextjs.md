@@ -26,7 +26,7 @@ caso eu queira que um client component se torne um server component, usamos o {c
 
 Laraja Server component
 Azul Client component
-![](Pasted%20image%2020240523120014.png)
+![](NextJS_ServerClient_Components.png)
 ##### Suspense API
 Por padrão o nextjs sempre vai carregar todos os components chamados pelo component pai
 Para evitamos esse comportamento, usamos o component Suspense do react, podemos usa-lo por volta do component que precisa ser carregado, o suspense recebe um fallback.

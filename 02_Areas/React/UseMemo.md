@@ -7,7 +7,7 @@ Criando Url preview queremos que a url seja gerada mas para ela não ser gerada 
 
 exemplo queremos cria a url somente quando uma imagem for carregada, basta passa a variável do estado onde esta sendo carregada a imagem, e quando ela for alterada, ai geraremos uma url preview, caso não tenha alterações o useMemo manterá o valor da urlPreview mesmo que o componente seja recarregado.
 
-![](Pasted%20image%2020241007092303.png)
-![](Pasted%20image%2020241007092342.png)
+![](UseMemo_URL_Preview_1.png)
+![](UseMemo_URL_Preview_2.png)
 
-![](Pasted%20image%2020241007092434.png)
+![](UseMemo_URL_Preview_3.png)

@@ -41,4 +41,4 @@
     Aqui, `/produtos` indica a categoria de produtos, e `/42` é o parâmetro de rota que identifica o produto específico com o ID 42. O servidor usa esse parâmetro para encontrar e exibir as informações desse produto em particular.
 
 
-![[Pasted image 20250423101116.png]]
+![[URL_Structure.png]]

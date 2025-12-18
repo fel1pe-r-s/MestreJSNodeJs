@@ -1,7 +1,7 @@
 #patterns
 
 
-![](Pasted%20image%2020240515221516.png)
+![](CleanArch_Diagram.png)
 
 - Essa camada geralmente colocamos tudo que é relacionado a camada de infra esturrara 
 

@@ -1,0 +1,130 @@
+--- Pasted image 20240515221516.png ---
+  In: Clean Architecture.md
+    
+    
+    ![](Pasted%20image%2020240515221516.png)
+    
+--- Pasted image 20240516222434.png ---
+  In: Tests.md
+    #Tests
+    
+    ![](Pasted%20image%2020240516222434.png)
+    
+--- Pasted image 20240523094713.png ---
+  In: Next-Auth.md
+    é o repositório que contei os  métodos de chamada ao banco de dados
+    
+    ![[Pasted image 20240523094713.png]]
+--- Pasted image 20240523120014.png ---
+  In: Nextjs.md
+    Laraja Server component
+    Azul Client component
+    ![](Pasted%20image%2020240523120014.png)
+    ##### Suspense API
+--- Pasted image 20240928124840.png ---
+  In: AWS.md
+    # Entendendo contêiner e deploy
+    
+    ![Network](Pasted%20image%2020240928124840.png)
+    
+  In: Docker.md
+    # Entendendo contêiner e deploy
+    
+    ![Network](Pasted%20image%2020240928124840.png)
+    
+--- Pasted image 20240928125923.png ---
+  In: Docker.md
+    O NGINX é um servidor web que serve páginas estáticas, como HTML, CSS e JavaScript, de forma eficiente. Ao contrário do Apache, que cria um novo processo para cada requisição, o NGINX utiliza um modelo assíncrono, permitindo o tratamento de múltiplas requisições simultaneamente, melhorando a performance em ambientes de produção.
+    
+    ![NGINX](Pasted%20image%2020240928125923.png)
+    ## Config
+--- Pasted image 20240929154642.png ---
+  In: Micro SaaS.md
+    
+    
+    ![[Pasted image 20240929154642.png]]
+    
+--- Pasted image 20240929164820.png ---
+  In: Micro SaaS.md
+    
+    
+    ![[Pasted image 20240929164820.png]]
+--- Pasted image 20240929183022.png ---
+  In: Server C&A.md
+    caso de uso exemplo, um formulário normalmente teríamos que  transforma o componente Forms em um use client para executar funções que desparram a partir de uma interação (onSubmit) do usuário, e será hidratada com o JavaScript necessário. Dessa forma usaríamos um State ou react query, para atualiza os dados e mostra em tela caso necessário.
+    
+    ![](Pasted%20image%2020240929183022.png)
+    
+--- Pasted image 20240929183536.png ---
+  In: Server C&A.md
+    transformamos a função que faz a chamada http  em uma `use server
+    quando sua função esta como use server as chamada são como requisição http
+    ![](Pasted%20image%2020240929183536.png)
+    
+--- Pasted image 20240929183638.png ---
+  In: Server C&A.md
+    
+    
+    ![](Pasted%20image%2020240929183638.png)
+    ### Server Component
+--- Pasted image 20240929184037.png ---
+  In: Server C&A.md
+    ### Server Component
+    Em caso de queremos atualizar alguma informação em tela com os dados do forms exemplo a lista de tags, la no componente onde fazemos a chamada para lista as tegs damos um tag que nome  a chamada a api
+    ![](Pasted%20image%2020240929184037.png)
+    
+--- Pasted image 20240929184243.png ---
+  In: Server C&A.md
+    ![](Pasted%20image%2020240929184037.png)
+    
+    e no componente server action pedimos a revalidação da chamada que traz as tags ![](Pasted%20image%2020240929184243.png)
+    
+--- Pasted image 20240929184546.png ---
+  In: Server C&A.md
+    
+    também podemos ter uma tela de carregamento com o hook useFormStatus() do react
+    ![](Pasted%20image%2020240929184546.png)
+--- Pasted image 20240929185140.png ---
+  In: SuspensApi.md
+    basta colocar o componente Suspense por volta do componente
+    
+    ![](Pasted%20image%2020240929185140.png)
+--- Pasted image 20241007092303.png ---
+  In: UseMemo.md
+    exemplo queremos cria a url somente quando uma imagem for carregada, basta passa a variável do estado onde esta sendo carregada a imagem, e quando ela for alterada, ai geraremos uma url preview, caso não tenha alterações o useMemo manterá o valor da urlPreview mesmo que o componente seja recarregado.
+    
+    ![](Pasted%20image%2020241007092303.png)
+    ![](Pasted%20image%2020241007092342.png)
+--- Pasted image 20241007092342.png ---
+  In: UseMemo.md
+    
+    ![](Pasted%20image%2020241007092303.png)
+    ![](Pasted%20image%2020241007092342.png)
+    
+--- Pasted image 20241007092434.png ---
+  In: UseMemo.md
+    ![](Pasted%20image%2020241007092342.png)
+    
+    ![](Pasted%20image%2020241007092434.png)
+    
+--- Pasted image 20241007093448.png ---
+  In: mappers.md
+    Para comunicação entre essas camada podemos usar os mappers convertendo o formato que a entidade é representada em outra camada.
+    
+    ![](Pasted%20image%2020241007093448.png)
+--- Pasted image 20241007125336.png ---
+  In: UseEffect.md
+    o useEffect permite executa uma função no primeiro parâmetro, quando um determinado valor é alterado no seu segundo parâmetro ou quando o componente é renderizado a primeira vez.
+    exemplo uma requisição a api pode ser feita usando o useEffect assim na primeira vez que o componente for renderizado ele executa a função para chamada a api.
+    ![](Pasted%20image%2020241007125336.png)
+    
+--- Pasted image 20241007131831.png ---
+  In: FackerJs.md
+    [doc]([Getting Started | Faker (fakerjs.dev)](https://fakerjs.dev/guide/))
+    
+    ![](Pasted%20image%2020241007131831.png)
+--- Pasted image 20250423101116.png ---
+  In: URL.md
+    
+    
+    ![[Pasted image 20250423101116.png]]

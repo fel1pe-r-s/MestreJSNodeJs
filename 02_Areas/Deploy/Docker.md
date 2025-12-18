@@ -159,7 +159,7 @@ agora basta no momento que for executa seu contêiner adicionar a o seguinte par
 # Servidor web NGINX
 O NGINX é um servidor web que serve páginas estáticas, como HTML, CSS e JavaScript, de forma eficiente. Ao contrário do Apache, que cria um novo processo para cada requisição, o NGINX utiliza um modelo assíncrono, permitindo o tratamento de múltiplas requisições simultaneamente, melhorando a performance em ambientes de produção.
 
-![NGINX](Pasted%20image%2020240928125923.png)
+![NGINX](Nginx_Architecture.png)
 ## Config
 ```javascript
 server {
@@ -268,7 +268,7 @@ DATABASE_URI= mongodb://mongo-wallet:27017/wallet
 ```
 # Entendendo contêiner e deploy
 
-![Network](Pasted%20image%2020240928124840.png)
+![Network](Container_Deploy_Network.png)
 
 ## Deploy aws [youtube](https://www.youtube.com/watch?v=bVzjKJL2b2M&list=TLPQMjgwOTIwMjSvLk9_EGw1Yg&index=10)
 - acesse a EC2 

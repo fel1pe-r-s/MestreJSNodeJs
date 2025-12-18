@@ -1,6 +1,6 @@
 #Tests
 
- ![](Pasted%20image%2020240516222434.png)
+ ![](Tests_Example.png)
 
 Testes “end-to-end” (E2E testing) são uma maneira de realizar testes atravessando todas as camadas da arquitetura de um sistema. **Os testes são realizados do início ao fim**, da aplicação.
 	Para tests E2E é importante evita usa mock para testamos a aplicação o más próximo do mundo real, dessa forma podemos configurar uma variavel de ambiente para altera o banco de dados quando for executa os test
