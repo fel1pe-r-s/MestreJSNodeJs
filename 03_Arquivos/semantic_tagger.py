@@ -216,41 +216,93 @@ def update_concept_file(concept, projects):
         except Exception as e:
             print(f"Error linking projects to {concept_file}: {e}")
 
+def generate_areas_tree(base_path, rel_path=""):
+    """Recursively build a markdown tree for 02_Areas."""
+    tree = []
+    full_path = os.path.join(base_path, rel_path)
+    
+    # Get immediate children
+    items = sorted(os.listdir(full_path))
+    
+    # Files first, then folders? Or just mixed?
+    # Let's do: list files in this folder, then subfolders.
+    files = [f for f in items if os.path.isfile(os.path.join(full_path, f)) and f.endswith(".md")]
+    dirs = [d for d in items if os.path.isdir(os.path.join(full_path, d)) and not d.startswith(".")]
+    
+    for f in files:
+        name = f.replace(".md", "")
+        path = os.path.join("02_Areas", rel_path, f)
+        tree.append(f"- [{name}]({path})")
+        
+    for d in dirs:
+        sub_rel = os.path.join(rel_path, d)
+        sub_tree = generate_areas_tree(base_path, sub_rel)
+        if sub_tree:
+            tree.append(f"- **{d}**")
+            for line in sub_tree:
+                tree.append(f"    {line}")
+                
+    return tree
+
 def update_root_readme(all_projects):
+    """Updates the root README.md with direct file links for Projects and Areas."""
     readme_path = os.path.join(ROOT_DIR, "README.md")
     if not os.path.exists(readme_path): return
+    
     try:
         with open(readme_path, 'r') as f:
             content = f.read()
-        header = "## 🚀 Projetos (Overview)"
-        links = []
+            
+        # 1. Update 01_Projetos Section
+        proj_lines = []
         for p in sorted(all_projects):
-            links.append(f"- **[{p}](01_Projetos/{p}/)**")
-        block = f"\n\n{header}\n" + "\n".join(links) + "\n"
+            proj_lines.append(f"* **[{p}](01_Projetos/{p}/README.md)**")
+        proj_block = "\n".join(proj_lines)
+        
+        # Regex replacement to find the section and swap content
+        content = re.sub(
+            r"(### \[01_Projetos\].*?\n)(.*?)(\n### \[02_Areas\])",
+            r"\1" + proj_block + r"\3",
+            content,
+            flags=re.DOTALL
+        )
+        
+        # 2. Update 02_Areas Section
+        areas_base = os.path.join(ROOT_DIR, "02_Areas")
+        areas_tree = generate_areas_tree(areas_base)
+        areas_block = "\n".join(areas_tree)
+        
+        content = re.sub(
+            r"(### \[02_Areas\].*?\n)(.*?)(\n### \[03_Arquivos\])",
+            r"\1" + areas_block + r"\3",
+            content,
+            flags=re.DOTALL
+        )
+        
+        # 3. Handle the Overview at the bottom (if exists)
+        header = "## 🚀 Projetos (Overview)"
         if header in content:
-             parts = content.split(header)
-             pre = parts[0]
-             post = parts[1]
-             lines = post.split('\n')
-             next_section_idx = -1
-             for i, line in enumerate(lines):
-                 if line.startswith("---") or (line.startswith("#") and i > 0):
-                     next_section_idx = i
-                     break
-             if next_section_idx != -1:
-                 rest = "\n".join(lines[next_section_idx:])
-                 new_content = pre + header + "\n" + "\n".join(links) + "\n" + rest
-             else:
-                 new_content = pre + header + "\n" + "\n".join(links) + "\n"
-        else:
-             if "## Metodologia de Uso" in content:
-                 parts = content.split("## Metodologia de Uso")
-                 new_content = parts[0] + block + "\n## Metodologia de Uso" + parts[1]
-             else:
-                 new_content = content + block
+            overview_links = [f"- **[{p}](01_Projetos/{p}/README.md)**" for p in sorted(all_projects)]
+            overview_block = f"\n\n{header}\n" + "\n".join(overview_links) + "\n"
+            
+            parts = content.split(header)
+            pre = parts[0]
+            rest = parts[1]
+            lines = rest.split('\n')
+            next_idx = -1
+            for i, line in enumerate(lines):
+                if line.startswith("---") or (line.startswith("#") and i > 0):
+                    next_idx = i
+                    break
+            if next_idx != -1:
+                content = pre + header + "\n" + "\n".join(overview_links) + "\n" + "\n".join(lines[next_idx:])
+            else:
+                content = pre + header + "\n" + "\n".join(overview_links) + "\n"
+
         with open(readme_path, 'w') as f:
-            f.write(new_content)
-        print("Root README.md updated with all projects.")
+            f.write(content)
+        print("Root README.md synchronized with direct file links.")
+        
     except Exception as e:
         print(f"Error updating root README: {e}")
 
@@ -277,6 +329,7 @@ def main():
     for concept, projects in concept_map.items():
         if projects:
             update_concept_file(concept, projects)
+            
     update_root_readme(all_projects)
 
 if __name__ == "__main__":
