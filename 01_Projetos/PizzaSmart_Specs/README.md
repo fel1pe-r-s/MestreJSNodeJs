@@ -1,3 +1,5 @@
+**Tags**: #Docker
+
 #PizzaSmart_Specs # PizzaSmart Specs
 
 **Status**: `#Project/Specs` `#Planning`
