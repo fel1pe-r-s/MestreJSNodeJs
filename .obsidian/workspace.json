@@ -1,0 +1,207 @@
+{
+  "main": {
+    "id": "87afbcecb1b58a39",
+    "type": "split",
+    "children": [
+      {
+        "id": "8be3824b9a304461",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bb518aeb7e343072",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Visualização em gráfico"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0ce0be62c9230b1a",
+    "type": "split",
+    "children": [
+      {
+        "id": "2d80600d20f206ac",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7bb4fe131aed4b8a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "457e59bebc298eeb",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "62c3748cfe493e40",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "1ef17717e001f727",
+    "type": "split",
+    "children": [
+      {
+        "id": "2a489fa61b3d7966",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3999fdebf997d94f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "abb6f7f84b5629a5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída"
+            }
+          },
+          {
+            "id": "510c128a513972fc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "cf725d5c0bf11910",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas as propriedades"
+            }
+          },
+          {
+            "id": "9da186e278cf632c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Criar nova base": false
+    }
+  },
+  "active": "bb518aeb7e343072",
+  "lastOpenFiles": [
+    "03_Arquivos/bulk_push.py",
+    "03_Arquivos/rename_github_repos.py",
+    "03_Arquivos/gh_2.40.1_linux_amd64/bin/gh",
+    "03_Arquivos/gh_2.40.1_linux_amd64/bin",
+    "03_Arquivos/gh_2.40.1_linux_amd64/share/man/man1/gh.1",
+    "03_Arquivos/gh_2.40.1_linux_amd64/share/man/man1/gh-workflow.1",
+    "03_Arquivos/gh_2.40.1_linux_amd64/share/man/man1/gh-workflow-view.1",
+    "03_Arquivos/gh_2.40.1_linux_amd64/share/man/man1/gh-workflow-run.1",
+    "03_Arquivos/gh_2.40.1_linux_amd64/share/man/man1/gh-workflow-list.1",
+    "03_Arquivos/gh_2.40.1_linux_amd64/share/man/man1/gh-workflow-enable.1",
+    "03_Arquivos/gh_2.40.1_linux_amd64/share/man/man1/gh-workflow-disable.1",
+    "03_Arquivos/URL_Structure.png",
+    "03_Arquivos/FakerJS_Screenshot.png",
+    "03_Arquivos/UseEffect_ApiCall.png",
+    "03_Arquivos/Mappers_Layer_Conversion.png",
+    "03_Arquivos/UseMemo_URL_Preview_3.png",
+    "03_Arquivos/UseMemo_URL_Preview_2.png",
+    "03_Arquivos/UseMemo_URL_Preview_1.png",
+    "03_Arquivos/Suspense_Example.png",
+    "03_Arquivos/UseFormStatus_Loading.png",
+    "03_Arquivos/ServerActions_TagRevalidation_2.png",
+    "01_Projetos/01-PROJETOS.md",
+    "01_Projetos/DesignSystem_Lib/README.MD",
+    "02_Areas/Database.md"
+  ]
+}
