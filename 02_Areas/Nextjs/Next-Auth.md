@@ -5,3 +5,7 @@ Adaptes [Commit](https://github.com/fel1pe-r-s/call-schedule/commit/b823263acc46
 é o repositório que contei os  métodos de chamada ao banco de dados
 
 ![[NextAuth_Repository.png]]
+
+## 🛠 Projects applying this concept
+- [CallScheduleApp](../../01_Projetos/CallScheduleApp)
+- [YourHotel_App](../../01_Projetos/YourHotel_App)

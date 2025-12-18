@@ -61,3 +61,25 @@
 	```
 - ##### UseContext
 	
+
+## 🛠 Projects applying this concept
+- [CallScheduleApp](../../01_Projetos/CallScheduleApp)
+- [DesignSystem_Lib](../../01_Projetos/DesignSystem_Lib)
+- [DevStore_Ecom](../../01_Projetos/DevStore_Ecom)
+- [Felipe_Website](../../01_Projetos/Felipe_Website)
+- [FindYourDuo_App](../../01_Projetos/FindYourDuo_App)
+- [FoodCourtApp](../../01_Projetos/FoodCourtApp)
+- [GDashChallenge](../../01_Projetos/GDashChallenge)
+- [IgniteShop](../../01_Projetos/IgniteShop)
+- [Journey_Plannner](../../01_Projetos/Journey_Plannner)
+- [MangaGenAI](../../01_Projetos/MangaGenAI)
+- [NextJS_Fundamentals](../../01_Projetos/NextJS_Fundamentals)
+- [Notes_App](../../01_Projetos/Notes_App)
+- [PizzaShop_Web](../../01_Projetos/PizzaShop_Web)
+- [ReactStateManagement](../../01_Projetos/ReactStateManagement)
+- [RestaurantsApp](../../01_Projetos/RestaurantsApp)
+- [SaaS_RBAC_System](../../01_Projetos/SaaS_RBAC_System)
+- [SmartPizza_App](../../01_Projetos/SmartPizza_App)
+- [TailwindMastery](../../01_Projetos/TailwindMastery)
+- [WebDevChallenge](../../01_Projetos/WebDevChallenge)
+- [YourHotel_App](../../01_Projetos/YourHotel_App)

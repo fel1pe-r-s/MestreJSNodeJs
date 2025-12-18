@@ -50,3 +50,6 @@ Ferramentas
 
 
 ![[MicroSaaS_Concept_2.png]]
+
+## 🛠 Projects applying this concept
+- [IgniteShop](../../01_Projetos/IgniteShop)

@@ -86,3 +86,9 @@ https://www.postgresql.org/docs/current/
 
 
 ---
+
+## 🛠 Projects applying this concept
+- [ApiWithBun](../../../01_Projetos/ApiWithBun)
+- [ImageReader_Tool](../../../01_Projetos/ImageReader_Tool)
+- [NodeJS_Studies](../../../01_Projetos/NodeJS_Studies)
+- [PizzaShoppingAPI](../../../01_Projetos/PizzaShoppingAPI)

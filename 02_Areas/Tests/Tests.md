@@ -9,3 +9,12 @@ Testes Unitários, testa a menor parte da aplicação geralmente usado para test
 
 Libs [vitest](vitest.md)
 [[cypress]]
+
+## 🛠 Projects applying this concept
+- [CleanDDD_Core](../../01_Projetos/CleanDDD_Core)
+- [GDashChallenge](../../01_Projetos/GDashChallenge)
+- [GymPass_App](../../01_Projetos/GymPass_App)
+- [NestCleanArchitecture](../../01_Projetos/NestCleanArchitecture)
+- [NestCleanRocketseat](../../01_Projetos/NestCleanRocketseat)
+- [NodeJS_Studies](../../01_Projetos/NodeJS_Studies)
+- [ServerlessTesting](../../01_Projetos/ServerlessTesting)

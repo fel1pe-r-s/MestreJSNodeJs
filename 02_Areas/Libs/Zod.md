@@ -60,3 +60,18 @@ const data = createEventSchema.parse(request.body)
 
 Também é possível fazer a transformação de dados.
 como por exemplo converter um numero que estava no formato string `"1"` para number `1`
+
+## 🛠 Projects applying this concept
+- [ApiWithBun](../../01_Projetos/ApiWithBun)
+- [CallScheduleApp](../../01_Projetos/CallScheduleApp)
+- [DevStore_Ecom](../../01_Projetos/DevStore_Ecom)
+- [FoodCourtApp](../../01_Projetos/FoodCourtApp)
+- [GymPass_App](../../01_Projetos/GymPass_App)
+- [Journey_Plannner](../../01_Projetos/Journey_Plannner)
+- [NestCleanArchitecture](../../01_Projetos/NestCleanArchitecture)
+- [NestCleanRocketseat](../../01_Projetos/NestCleanRocketseat)
+- [NodeJS_Studies](../../01_Projetos/NodeJS_Studies)
+- [PizzaShop_Web](../../01_Projetos/PizzaShop_Web)
+- [PizzaShoppingAPI](../../01_Projetos/PizzaShoppingAPI)
+- [SaaS_RBAC_System](../../01_Projetos/SaaS_RBAC_System)
+- [WebDevChallenge](../../01_Projetos/WebDevChallenge)

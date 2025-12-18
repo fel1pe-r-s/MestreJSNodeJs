@@ -9,3 +9,6 @@ o Cypress pode ser usado também para tests de components
 Já os tests E2E não dependendo da tecnologia estamos usando.
 
 Podemos roda os test via linha de comando ou pela interface.
+
+## 🛠 Projects applying this concept
+- [DevStore_Ecom](../../01_Projetos/DevStore_Ecom)

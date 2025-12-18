@@ -448,3 +448,11 @@ Depois de encontrar o commit com problema, para retornar para o *HEAD* utilize:
 
 
 
+
+
+## 🛠 Projects applying this concept
+- [DesignSystem_Lib](../../01_Projetos/DesignSystem_Lib)
+- [DevStore_Ecom](../../01_Projetos/DevStore_Ecom)
+- [FelipeRS_Profile](../../01_Projetos/FelipeRS_Profile)
+- [GymPass_App](../../01_Projetos/GymPass_App)
+- [ServerlessTesting](../../01_Projetos/ServerlessTesting)

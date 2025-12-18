@@ -41,3 +41,9 @@
 	- Independente de banco de dados. Você pode trocar o Oracle ou SQL Server, por Mongo, BigTable, CouchDB ou qualquer outro. Suas regras de negócios não estão vinculadas ao banco de dados.
 	
 	- Independente de qualquer agente externo. Na verdade, suas regras de negócios simplesmente não sabem nada sobre o mundo exterior, não estão ligadas a nenhum Framework.
+
+
+## 🛠 Projects applying this concept
+- [CleanDDD_Core](../../01_Projetos/CleanDDD_Core)
+- [NestCleanArchitecture](../../01_Projetos/NestCleanArchitecture)
+- [NestCleanRocketseat](../../01_Projetos/NestCleanRocketseat)

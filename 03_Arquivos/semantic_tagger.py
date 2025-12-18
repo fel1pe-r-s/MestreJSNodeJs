@@ -179,31 +179,120 @@ def update_markdown(file_path, new_tags):
         with open(file_path, "w") as f:
             f.write("\n".join(lines))
         
-        print(f"Updated {os.path.basename(file_path)} with {len(updated_tags)} tags")
+        # print(f"Updated {os.path.basename(file_path)} with {len(updated_tags)} tags")
 
     except Exception as e:
         print(f"Error updating {file_path}: {e}")
 
+def update_concept_file(concept, projects):
+    """Updates the Concept MD file with a list of projects using it."""
+    # 1. Find the file for this concept
+    concept_file = None
+    for root, _, files in os.walk(os.path.join(ROOT_DIR, "02_Areas")):
+        for f in files:
+            # Match filename (e.g. "React.md" matches concept "React")
+            if f.lower() == f"{concept.lower()}.md":
+                concept_file = os.path.join(root, f)
+                break
+            # Handle variations if needed?
+        if concept_file: break
+    
+    if not concept_file:
+         # print(f"Warning: No study note found for concept '{concept}'")
+         return
+
+    try:
+        with open(concept_file, 'r') as f:
+            content = f.read()
+            
+        # 2. Append/Update "Projects applying this concept" section
+        header = "## 🛠 Projects applying this concept"
+        
+        # Build the list of links
+        # Format: - [ProjectName](../../01_Projetos/ProjectName)
+        new_links = []
+        for p_name in sorted(projects):
+            # Calculate relative path from concept file to project dir
+            # But simpler: use absolute path or consistent relative path?
+            # Obsidian prefers [[Link]] or relative standard links.
+            # Let's try standard relative links.
+            
+            p_path = os.path.join(PROJECTS_DIR, p_name)
+            rel_path = os.path.relpath(p_path, os.path.dirname(concept_file))
+            
+            link = f"- [{p_name}]({rel_path})"
+            new_links.append(link)
+            
+        block = f"\n\n{header}\n" + "\n".join(new_links) + "\n"
+        
+        if header in content:
+            # Replace existing section
+            # Heuristic: Find header, read until next header or EOF
+            parts = content.split(header)
+            pre = parts[0]
+            
+            # Find start of next section in post
+            post = parts[1]
+            next_section_idx = -1
+            lines = post.split('\n')
+            
+            # Skip first empty lines
+            for i, line in enumerate(lines):
+                if line.startswith("#") and i > 0: # Next header
+                    next_section_idx = i
+                    break
+            
+            if next_section_idx != -1:
+                # Keep the rest
+                rest = "\n".join(lines[next_section_idx:])
+                new_content = pre + header + "\n" + "\n".join(new_links) + "\n" + rest
+            else:
+                # EOF
+                new_content = pre + header + "\n" + "\n".join(new_links) + "\n"
+        else:
+            # Append to end
+            new_content = content + block
+            
+        with open(concept_file, 'w') as f:
+            f.write(new_content)
+        print(f"Linked {len(projects)} projects to {os.path.basename(concept_file)}")
+            
+    except Exception as e:
+        print(f"Error linking projects to {concept}: {e}")
+
 def main():
-    print("Starting Deep Semantic Tagging...")
+    print("Starting Deep Semantic Tagging (Bidirectional)...")
+    
+    # Store reverse map: Concept -> List[ProjectName]
+    concept_map = {k: [] for k in CONCEPTS.keys()}
     
     for project in sorted(os.listdir(PROJECTS_DIR)):
         p_path = os.path.join(PROJECTS_DIR, project)
         if not os.path.isdir(p_path): continue
         
-        print(f"Scanning {project}...")
+        # print(f"Scanning {project}...")
         tags = scan_project(p_path)
         
         if tags:
-            # Update README
+            # 1. Forward Tagging (Project -> Concept)
             readme = os.path.join(p_path, "README.md")
             if os.path.exists(readme):
                 update_markdown(readme, tags)
             
-            # Update Analysis Card
             card = os.path.join(ROOT_DIR, "00_Entrada", f"Analise_{project}.md")
             if os.path.exists(card):
                 update_markdown(card, tags)
+                
+            # 2. Collect for Reverse Tagging (Concept -> Project)
+            for t in tags:
+                if t not in concept_map: concept_map[t] = []
+                concept_map[t].append(project)
+
+    # 3. Apply Reverse Linking
+    print("Applying Reverse Links (Study Material -> Projects)...")
+    for concept, projects in concept_map.items():
+        if projects:
+            update_concept_file(concept, projects)
 
 if __name__ == "__main__":
     main()

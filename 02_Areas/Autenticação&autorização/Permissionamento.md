@@ -8,3 +8,7 @@ traz um nivel mas granular, basicamente definindo o que cada usuário apartir da
 exemplo: admim é uma role que define que esse usuário tera as permissões de um admim. o admim pode excluir uma loja? pode criar uma loja?
 
 [[CASL]]
+
+
+## 🛠 Projects applying this concept
+- [SaaS_RBAC_System](../../01_Projetos/SaaS_RBAC_System)

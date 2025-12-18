@@ -153,3 +153,8 @@ exemplo @Controller() server para usar métodos que são rotas @Get() quer dizer
 	 `return`
 	 `}`
 `}`
+
+## 🛠 Projects applying this concept
+- [GDashChallenge](../../01_Projetos/GDashChallenge)
+- [NestCleanArchitecture](../../01_Projetos/NestCleanArchitecture)
+- [NestCleanRocketseat](../../01_Projetos/NestCleanRocketseat)

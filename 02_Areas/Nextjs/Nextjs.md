@@ -122,3 +122,14 @@ generateStaticParams()
 	```
 	Primeiro parâmetro, é uma uma função que é a minha server action
 	Segundo parâmetro, é o estado inicial, ele pode inicia como null.
+
+## 🛠 Projects applying this concept
+- [CallScheduleApp](../../01_Projetos/CallScheduleApp)
+- [DevStore_Ecom](../../01_Projetos/DevStore_Ecom)
+- [Felipe_Website](../../01_Projetos/Felipe_Website)
+- [IgniteShop](../../01_Projetos/IgniteShop)
+- [NextJS_Fundamentals](../../01_Projetos/NextJS_Fundamentals)
+- [SaaS_RBAC_System](../../01_Projetos/SaaS_RBAC_System)
+- [SmartPizza_App](../../01_Projetos/SmartPizza_App)
+- [TailwindMastery](../../01_Projetos/TailwindMastery)
+- [YourHotel_App](../../01_Projetos/YourHotel_App)

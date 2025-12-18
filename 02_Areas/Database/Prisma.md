@@ -26,3 +26,16 @@ exemplo
 
 Se eu passa Role para uma coluna essa coluna só poderá receber um dos dois valores contidos no enum student ou instructor também podemos dizer qual sera o valor default para a coluna passando @default(student) passado o valor que será o padrão, caso nenhum valor seja passado.
 
+
+
+## 🛠 Projects applying this concept
+- [CallScheduleApp](../../01_Projetos/CallScheduleApp)
+- [FindYourDuo_App](../../01_Projetos/FindYourDuo_App)
+- [FoodCourtApp](../../01_Projetos/FoodCourtApp)
+- [GymPass_App](../../01_Projetos/GymPass_App)
+- [Journey_Plannner](../../01_Projetos/Journey_Plannner)
+- [MovieNotesAPI](../../01_Projetos/MovieNotesAPI)
+- [NestCleanArchitecture](../../01_Projetos/NestCleanArchitecture)
+- [NestCleanRocketseat](../../01_Projetos/NestCleanRocketseat)
+- [SaaS_RBAC_System](../../01_Projetos/SaaS_RBAC_System)
+- [SmartPizza_App](../../01_Projetos/SmartPizza_App)

@@ -13,3 +13,11 @@ Single-tenant -> uma única instância do software utilizado por uma empresa, se
 Multi-tenant ->  um software que esta em uma estrutura que todas as empresas vão usar mesma infraestrutura.
 
 [[mapa.canvas|mapa]]
+
+
+## 🛠 Projects applying this concept
+- [DevStore_Ecom](../../01_Projetos/DevStore_Ecom)
+- [IgniteShop](../../01_Projetos/IgniteShop)
+- [PizzaShop_Web](../../01_Projetos/PizzaShop_Web)
+- [PizzaShoppingAPI](../../01_Projetos/PizzaShoppingAPI)
+- [SaaS_RBAC_System](../../01_Projetos/SaaS_RBAC_System)
