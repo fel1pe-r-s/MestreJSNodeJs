@@ -20,8 +20,7 @@
 	Shot de como estudar pela documentação
 [-]Planejar post falando sobre estudar pela documentação
 
-Redes Sociais queis devo gerenciar
-[x.com](https://x.com/fel1pe_r_s)  [[X]]
+Redes Sociais quais devo gerenciar
 [Instagram](https://www.instagram.com/fel1pe.r.s/)
 [Facebook](https://www.facebook.com/fel1pe.r.s)
 [YouTube](https://www.youtube.com/@fel1pe-r-s)

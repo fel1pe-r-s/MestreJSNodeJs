@@ -8,7 +8,7 @@ Este repositório contém todo o meu material de estudos como programador, organ
 Caixa de entrada para novos assuntos, notas rápidas e temas que ainda não foram categorizados ou aprofundados.
 
 ### [01_Projetos](01_Projetos/)
-* **[ApiWithBun](01_Projetos/ApiWithBun/README.md)**
+* **[ApiWithBun](01_Projetos/ApiWithBun)**
 * **[CallScheduleApp](01_Projetos/CallScheduleApp/README.md)**
 * **[CalligraphyTrainingApp](01_Projetos/CalligraphyTrainingApp/README.md)**
 * **[CleanDDD_Core](01_Projetos/CleanDDD_Core/README.md)**

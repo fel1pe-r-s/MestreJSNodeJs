@@ -51,7 +51,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:/../../../01_Projetos",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -76,7 +76,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1ef17717e001f727",
@@ -175,14 +176,30 @@
       "daily-notes:Abrir a nota de hoje": false,
       "templates:Inserir modelo": false,
       "command-palette:Abrir paleta de comandos": false,
-      "bases:Criar nova base": false
+      "bases:Criar nova base": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-kanban:Criar um novo quadro": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "ad2acf42e29b0a81",
   "lastOpenFiles": [
+    "01_Projetos/_Index_of_01_Projetos.md",
+    "01_Projetos/LogicPocketKnife_CLI/_Index_of_LogicPocketKnife_CLI.md",
+    "01_Projetos/LogicPocketKnife_CLI/README.md",
+    "01_Projetos/LogicPocketKnife_CLI",
+    "02_Areas/_Index_of_02_Areas.md",
+    "02_Areas/Roadmap_JS_TS.md",
+    "02_Areas/Database/Postgresql/Postgresql.md",
+    "01_Projetos/Content_Planning/Projeto persona.md",
+    "_Index_of_MestreJSNodeJs.md",
+    "03_Arquivos/_Index_of_03_Arquivos.md",
+    "03_Arquivos/- Índice.md",
+    "02_Areas/patterns/patterns.md",
+    "README.md",
+    "01_Projetos/GDashChallenge/docs/FRONTEND.md",
     "03_Arquivos/__pycache__/semantic_tagger.cpython-310.pyc",
     "03_Arquivos/__pycache__",
-    "README.md",
     "02_Areas/Autenticação&autorização.md",
     "01_Projetos/ApiWithBun/README.md",
     "01_Projetos/ApiWithBun 1.md",
@@ -200,8 +217,6 @@
     "03_Arquivos/gh_2.40.1_linux_amd64/bin",
     "03_Arquivos/gh_2.40.1_linux_amd64/share/man/man1/gh.1",
     "03_Arquivos/gh_2.40.1_linux_amd64/share/man/man1/gh-workflow.1",
-    "03_Arquivos/gh_2.40.1_linux_amd64/share/man/man1/gh-workflow-view.1",
-    "03_Arquivos/gh_2.40.1_linux_amd64/share/man/man1/gh-workflow-run.1",
     "03_Arquivos/URL_Structure.png",
     "03_Arquivos/FakerJS_Screenshot.png",
     "03_Arquivos/UseEffect_ApiCall.png",
