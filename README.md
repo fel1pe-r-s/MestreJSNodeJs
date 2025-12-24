@@ -46,6 +46,7 @@ Caixa de entrada para novos assuntos, notas rápidas e temas que ainda não fora
 * **[Mangagenai](01_Projetos/Mangagenai/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/MangaGenAI)
 * **[Mestre](01_Projetos/Mestre/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/Mestre)
 * **[MestreJSArchitect](01_Projetos/MestreJSArchitect/README.md)**
+* **[MestreJS_Template](01_Projetos/MestreJS_Template/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/MestreJS_Template)
 * **[Movienotesapi](01_Projetos/Movienotesapi/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/MovieNotesAPI)
 * **[Nestcleanarchitecture](01_Projetos/Nestcleanarchitecture/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/NestCleanArchitecture)
 * **[Nestcleanrocketseat](01_Projetos/Nestcleanrocketseat/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/NestCleanRocketseat)
@@ -64,7 +65,7 @@ Caixa de entrada para novos assuntos, notas rápidas e temas que ainda não fora
 * **[SmartpizzaApp](01_Projetos/SmartpizzaApp/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/SmartPizza_App)
 * **[Tailwindmastery](01_Projetos/Tailwindmastery/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/TailwindMastery)
 * **[Taskmanagementapp](01_Projetos/Taskmanagementapp/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/TaskManagementApp)
-* **[TechDesk_SaaS](01_Projetos/TechDesk_SaaS/README.md)**
+* **[TechDesk_SaaS](01_Projetos/TechDesk_SaaS/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/TechDesk_SaaS)
 * **[Webdevchallenge](01_Projetos/Webdevchallenge/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/WebDevChallenge)
 * **[YourhotelApp](01_Projetos/YourhotelApp/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/YourHotel_App)
 * **[energy-tracker](01_Projetos/energy-tracker/README.md)**
@@ -208,6 +209,7 @@ Recursos gerais, backups e arquivos que não se encaixam nas outras categorias.
 - **[Mangagenai](01_Projetos/Mangagenai/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/MangaGenAI)
 - **[Mestre](01_Projetos/Mestre/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/Mestre)
 - **[MestreJSArchitect](01_Projetos/MestreJSArchitect/README.md)**
+- **[MestreJS_Template](01_Projetos/MestreJS_Template/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/MestreJS_Template)
 - **[Movienotesapi](01_Projetos/Movienotesapi/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/MovieNotesAPI)
 - **[Nestcleanarchitecture](01_Projetos/Nestcleanarchitecture/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/NestCleanArchitecture)
 - **[Nestcleanrocketseat](01_Projetos/Nestcleanrocketseat/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/NestCleanRocketseat)
@@ -226,7 +228,7 @@ Recursos gerais, backups e arquivos que não se encaixam nas outras categorias.
 - **[SmartpizzaApp](01_Projetos/SmartpizzaApp/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/SmartPizza_App)
 - **[Tailwindmastery](01_Projetos/Tailwindmastery/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/TailwindMastery)
 - **[Taskmanagementapp](01_Projetos/Taskmanagementapp/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/TaskManagementApp)
-- **[TechDesk_SaaS](01_Projetos/TechDesk_SaaS/README.md)**
+- **[TechDesk_SaaS](01_Projetos/TechDesk_SaaS/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/TechDesk_SaaS)
 - **[Webdevchallenge](01_Projetos/Webdevchallenge/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/WebDevChallenge)
 - **[YourhotelApp](01_Projetos/YourhotelApp/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/YourHotel_App)
 - **[energy-tracker](01_Projetos/energy-tracker/README.md)**
@@ -269,6 +271,7 @@ Este repositório conta com scripts em Python na pasta `03_Arquivos` para facili
 
 *   **`clone_all_repos.py`**: Baixa e renomeia (PascalCase) todos os repositórios do seu GitHub.
 *   **`generate_remote_links.py`**: Atualiza este README com links diretos para o GitHub de cada projeto.
+*   **`generate_dashboard.py`**: Gera o painel de métricas (Badges) no topo deste arquivo.
 *   **`bulk_commit.py`**: Percorre todas as pastas em `01_Projetos` e realiza commit das alterações locais.
 *   **`bulk_push.py`**: Envia as alterações de todos os sub-projetos para os seus respectivos remotos.
 *   **`semantic_tagger.py`**: (Legado) Gera tags e links bidirecionais entre Projetos e Áreas de Estudo.
