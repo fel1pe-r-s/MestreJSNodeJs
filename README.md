@@ -248,13 +248,29 @@ Recursos gerais, backups e arquivos que não se encaixam nas outras categorias.
 
 A ferramenta oficial para gerar novos projetos.
 
-### Instalação (Local)
-1.  Entre na pasta do CLI: `cd 01_Projetos/MestreCLI`
-2.  Compile: `go build -o mestre`
-3.  Execute: `./mestre init`
+### Instalação (Compilação)
+
+#### Linux / macOS
+O comando `sudo mv` move o arquivo para uma pasta do sistema (`/usr/local/bin`) para que você possa rodar `mestre` em qualquer terminal, sem precisar estar na pasta do projeto.
+```bash
+# 1. Compile
+go build -o mestre
+
+# 2. Instale (Mova para o PATH global)
+sudo mv mestre /usr/local/bin/
+```
+
+#### Windows (PowerShell)
+No Windows, você deve adicionar a pasta onde o `mestre.exe` está ao **PATH** do sistema, ou mover o executável para uma pasta que já esteja no PATH (como `C:\Windows\System32`, embora não recomendado).
+
+Alternativa simples (rodar apenas desta pasta):
+```powershell
+go build -o mestre.exe
+.\mestre.exe init
+```
 
 ### Sub-Comandos
-*   `init`: Inicia o wizard interativo para escolher entre Backend, Universal ou Monorepo.
+*   `init`: Inicia o wizard interativo para escolher o Template e definir o Nome do Projeto.
 
 ---
 
