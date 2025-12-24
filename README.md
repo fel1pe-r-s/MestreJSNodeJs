@@ -8,46 +8,54 @@ Este repositório contém todo o meu material de estudos como programador, organ
 Caixa de entrada para novos assuntos, notas rápidas e temas que ainda não foram categorizados ou aprofundados.
 
 ### [01_Projetos](01_Projetos/)
-* **[ApiWithBun](01_Projetos/ApiWithBun)**
-* **[CallScheduleApp](01_Projetos/CallScheduleApp/README.md)**
-* **[CalligraphyTrainingApp](01_Projetos/CalligraphyTrainingApp/README.md)**
-* **[CleanDDD_Core](01_Projetos/CleanDDD_Core/README.md)**
-* **[Content_Planning](01_Projetos/Content_Planning/README.md)**
-* **[DailyLogger](01_Projetos/DailyLogger/README.md)**
-* **[DesignSystem_Lib](01_Projetos/DesignSystem_Lib/README.md)**
-* **[DevFinance](01_Projetos/DevFinance/README.md)**
-* **[DevStore_Ecom](01_Projetos/DevStore_Ecom/README.md)**
-* **[FelipeRS_Profile](01_Projetos/FelipeRS_Profile/README.md)**
-* **[Felipe_Website](01_Projetos/Felipe_Website/README.md)**
-* **[FindYourDuo_App](01_Projetos/FindYourDuo_App/README.md)**
-* **[FocusTimeChallenge](01_Projetos/FocusTimeChallenge/README.md)**
-* **[FoodCourtApp](01_Projetos/FoodCourtApp/README.md)**
-* **[GDashChallenge](01_Projetos/GDashChallenge/README.md)**
-* **[GeminiVision_AI](01_Projetos/GeminiVision_AI/README.md)**
-* **[GymPass_App](01_Projetos/GymPass_App/README.md)**
-* **[IgniteShop](01_Projetos/IgniteShop/README.md)**
-* **[ImageReader_Tool](01_Projetos/ImageReader_Tool/README.md)**
-* **[Journey_Plannner](01_Projetos/Journey_Plannner/README.md)**
-* **[MangaGenAI](01_Projetos/MangaGenAI/README.md)**
-* **[MovieNotesAPI](01_Projetos/MovieNotesAPI/README.md)**
-* **[NestCleanArchitecture](01_Projetos/NestCleanArchitecture/README.md)**
-* **[NestCleanRocketseat](01_Projetos/NestCleanRocketseat/README.md)**
-* **[NextJS_Fundamentals](01_Projetos/NextJS_Fundamentals/README.md)**
-* **[NodeJS_Studies](01_Projetos/NodeJS_Studies/README.md)**
-* **[Notes_App](01_Projetos/Notes_App/README.md)**
-* **[PizzaShop_Web](01_Projetos/PizzaShop_Web/README.md)**
-* **[PizzaShoppingAPI](01_Projetos/PizzaShoppingAPI/README.md)**
-* **[PizzaSmart_Specs](01_Projetos/PizzaSmart_Specs/README.md)**
-* **[Portfolio_Docs](01_Projetos/Portfolio_Docs/README.md)**
-* **[ReactStateManagement](01_Projetos/ReactStateManagement/README.md)**
-* **[RestaurantsApp](01_Projetos/RestaurantsApp/README.md)**
-* **[SaaS_RBAC_System](01_Projetos/SaaS_RBAC_System/README.md)**
-* **[ServerlessTesting](01_Projetos/ServerlessTesting/README.md)**
-* **[SmartPizza_App](01_Projetos/SmartPizza_App/README.md)**
-* **[TailwindMastery](01_Projetos/TailwindMastery/README.md)**
-* **[TaskManagementApp](01_Projetos/TaskManagementApp/README.md)**
-* **[WebDevChallenge](01_Projetos/WebDevChallenge/README.md)**
-* **[YourHotel_App](01_Projetos/YourHotel_App/README.md)**
+* **[Apiwithbun](01_Projetos/Apiwithbun/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/ApiWithBun)
+* **[Calligraphytrainingapp](01_Projetos/Calligraphytrainingapp/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/CalligraphyTrainingApp)
+* **[Callscheduleapp](01_Projetos/Callscheduleapp/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/CallScheduleApp)
+* **[CleandddCore](01_Projetos/CleandddCore/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/CleanDDD_Core)
+* **[Content_Planning](01_Projetos/Content_Planning/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/MestreJSNodeJs)
+* **[Dailylogger](01_Projetos/Dailylogger/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/DailyLogger)
+* **[DesafioGdash202502](01_Projetos/DesafioGdash202502/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/desafio-gdash-2025-02)
+* **[DesignsystemLib](01_Projetos/DesignsystemLib/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/DesignSystem_Lib)
+* **[Devfinance](01_Projetos/Devfinance/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/DevFinance)
+* **[DevstoreEcom](01_Projetos/DevstoreEcom/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/DevStore_Ecom)
+* **[FelipeRS_Profile](01_Projetos/FelipeRS_Profile/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/FelipeRS_Profile)
+* **[FelipeWebsite](01_Projetos/FelipeWebsite/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/Felipe_Website)
+* **[FindyourduoApp](01_Projetos/FindyourduoApp/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/FindYourDuo_App)
+* **[Focustimechallenge](01_Projetos/Focustimechallenge/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/FocusTimeChallenge)
+* **[Foodcourtapp](01_Projetos/Foodcourtapp/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/FoodCourtApp)
+* **[Gdashchallenge](01_Projetos/Gdashchallenge/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/GDashChallenge)
+* **[GeminivisionAi](01_Projetos/GeminivisionAi/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/GeminiVision_AI)
+* **[GympassApp](01_Projetos/GympassApp/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/GymPass_App)
+* **[HealhThesis](01_Projetos/HealhThesis/README.md)**
+* **[Igniteshop](01_Projetos/Igniteshop/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/IgniteShop)
+* **[ImagereaderTool](01_Projetos/ImagereaderTool/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/ImageReader_Tool)
+* **[JourneyPlannner](01_Projetos/JourneyPlannner/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/Journey_Plannner)
+* **[LogicPocketKnife_CLI](01_Projetos/LogicPocketKnife_CLI/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/MestreJSNodeJs)
+* **[Mangagenai](01_Projetos/Mangagenai/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/MangaGenAI)
+* **[Mestre](01_Projetos/Mestre/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/Mestre)
+* **[MestreJSArchitect](01_Projetos/MestreJSArchitect/README.md)**
+* **[Movienotesapi](01_Projetos/Movienotesapi/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/MovieNotesAPI)
+* **[Nestcleanarchitecture](01_Projetos/Nestcleanarchitecture/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/NestCleanArchitecture)
+* **[Nestcleanrocketseat](01_Projetos/Nestcleanrocketseat/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/NestCleanRocketseat)
+* **[NextjsFundamentals](01_Projetos/NextjsFundamentals/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/NextJS_Fundamentals)
+* **[NodejsStudies](01_Projetos/NodejsStudies/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/NodeJS_Studies)
+* **[NotesApp](01_Projetos/NotesApp/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/Notes_App)
+* **[Pg](01_Projetos/Pg/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/pg)
+* **[PizzaSmart_Specs](01_Projetos/PizzaSmart_Specs/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/MestreJSNodeJs)
+* **[PizzashopWeb](01_Projetos/PizzashopWeb/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/PizzaShop_Web)
+* **[Pizzashoppingapi](01_Projetos/Pizzashoppingapi/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/PizzaShoppingAPI)
+* **[Portfolio_Docs](01_Projetos/Portfolio_Docs/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/MestreJSNodeJs)
+* **[Reactstatemanagement](01_Projetos/Reactstatemanagement/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/ReactStateManagement)
+* **[Restaurantsapp](01_Projetos/Restaurantsapp/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/RestaurantsApp)
+* **[SaasRbacSystem](01_Projetos/SaasRbacSystem/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/SaaS_RBAC_System)
+* **[Serverlesstesting](01_Projetos/Serverlesstesting/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/ServerlessTesting)
+* **[SmartpizzaApp](01_Projetos/SmartpizzaApp/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/SmartPizza_App)
+* **[Tailwindmastery](01_Projetos/Tailwindmastery/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/TailwindMastery)
+* **[Taskmanagementapp](01_Projetos/Taskmanagementapp/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/TaskManagementApp)
+* **[TechDesk_SaaS](01_Projetos/TechDesk_SaaS/README.md)**
+* **[Webdevchallenge](01_Projetos/Webdevchallenge/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/WebDevChallenge)
+* **[YourhotelApp](01_Projetos/YourhotelApp/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/YourHotel_App)
+* **[energy-tracker](01_Projetos/energy-tracker/README.md)**
 ### [02_Areas](02_Areas/)
 - [Database](02_Areas/Database.md)
 - **Autenticação&autorização**
@@ -162,46 +170,54 @@ Recursos gerais, backups e arquivos que não se encaixam nas outras categorias.
 
 
 ## 🚀 Projetos (Overview)
-- **[ApiWithBun](01_Projetos/ApiWithBun/README.md)**
-- **[CallScheduleApp](01_Projetos/CallScheduleApp/README.md)**
-- **[CalligraphyTrainingApp](01_Projetos/CalligraphyTrainingApp/README.md)**
-- **[CleanDDD_Core](01_Projetos/CleanDDD_Core/README.md)**
-- **[Content_Planning](01_Projetos/Content_Planning/README.md)**
-- **[DailyLogger](01_Projetos/DailyLogger/README.md)**
-- **[DesignSystem_Lib](01_Projetos/DesignSystem_Lib/README.md)**
-- **[DevFinance](01_Projetos/DevFinance/README.md)**
-- **[DevStore_Ecom](01_Projetos/DevStore_Ecom/README.md)**
-- **[FelipeRS_Profile](01_Projetos/FelipeRS_Profile/README.md)**
-- **[Felipe_Website](01_Projetos/Felipe_Website/README.md)**
-- **[FindYourDuo_App](01_Projetos/FindYourDuo_App/README.md)**
-- **[FocusTimeChallenge](01_Projetos/FocusTimeChallenge/README.md)**
-- **[FoodCourtApp](01_Projetos/FoodCourtApp/README.md)**
-- **[GDashChallenge](01_Projetos/GDashChallenge/README.md)**
-- **[GeminiVision_AI](01_Projetos/GeminiVision_AI/README.md)**
-- **[GymPass_App](01_Projetos/GymPass_App/README.md)**
-- **[IgniteShop](01_Projetos/IgniteShop/README.md)**
-- **[ImageReader_Tool](01_Projetos/ImageReader_Tool/README.md)**
-- **[Journey_Plannner](01_Projetos/Journey_Plannner/README.md)**
-- **[MangaGenAI](01_Projetos/MangaGenAI/README.md)**
-- **[MovieNotesAPI](01_Projetos/MovieNotesAPI/README.md)**
-- **[NestCleanArchitecture](01_Projetos/NestCleanArchitecture/README.md)**
-- **[NestCleanRocketseat](01_Projetos/NestCleanRocketseat/README.md)**
-- **[NextJS_Fundamentals](01_Projetos/NextJS_Fundamentals/README.md)**
-- **[NodeJS_Studies](01_Projetos/NodeJS_Studies/README.md)**
-- **[Notes_App](01_Projetos/Notes_App/README.md)**
-- **[PizzaShop_Web](01_Projetos/PizzaShop_Web/README.md)**
-- **[PizzaShoppingAPI](01_Projetos/PizzaShoppingAPI/README.md)**
-- **[PizzaSmart_Specs](01_Projetos/PizzaSmart_Specs/README.md)**
-- **[Portfolio_Docs](01_Projetos/Portfolio_Docs/README.md)**
-- **[ReactStateManagement](01_Projetos/ReactStateManagement/README.md)**
-- **[RestaurantsApp](01_Projetos/RestaurantsApp/README.md)**
-- **[SaaS_RBAC_System](01_Projetos/SaaS_RBAC_System/README.md)**
-- **[ServerlessTesting](01_Projetos/ServerlessTesting/README.md)**
-- **[SmartPizza_App](01_Projetos/SmartPizza_App/README.md)**
-- **[TailwindMastery](01_Projetos/TailwindMastery/README.md)**
-- **[TaskManagementApp](01_Projetos/TaskManagementApp/README.md)**
-- **[WebDevChallenge](01_Projetos/WebDevChallenge/README.md)**
-- **[YourHotel_App](01_Projetos/YourHotel_App/README.md)**
+- **[Apiwithbun](01_Projetos/Apiwithbun/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/ApiWithBun)
+- **[Calligraphytrainingapp](01_Projetos/Calligraphytrainingapp/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/CalligraphyTrainingApp)
+- **[Callscheduleapp](01_Projetos/Callscheduleapp/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/CallScheduleApp)
+- **[CleandddCore](01_Projetos/CleandddCore/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/CleanDDD_Core)
+- **[Content_Planning](01_Projetos/Content_Planning/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/MestreJSNodeJs)
+- **[Dailylogger](01_Projetos/Dailylogger/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/DailyLogger)
+- **[DesafioGdash202502](01_Projetos/DesafioGdash202502/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/desafio-gdash-2025-02)
+- **[DesignsystemLib](01_Projetos/DesignsystemLib/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/DesignSystem_Lib)
+- **[Devfinance](01_Projetos/Devfinance/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/DevFinance)
+- **[DevstoreEcom](01_Projetos/DevstoreEcom/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/DevStore_Ecom)
+- **[FelipeRS_Profile](01_Projetos/FelipeRS_Profile/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/FelipeRS_Profile)
+- **[FelipeWebsite](01_Projetos/FelipeWebsite/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/Felipe_Website)
+- **[FindyourduoApp](01_Projetos/FindyourduoApp/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/FindYourDuo_App)
+- **[Focustimechallenge](01_Projetos/Focustimechallenge/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/FocusTimeChallenge)
+- **[Foodcourtapp](01_Projetos/Foodcourtapp/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/FoodCourtApp)
+- **[Gdashchallenge](01_Projetos/Gdashchallenge/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/GDashChallenge)
+- **[GeminivisionAi](01_Projetos/GeminivisionAi/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/GeminiVision_AI)
+- **[GympassApp](01_Projetos/GympassApp/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/GymPass_App)
+- **[HealhThesis](01_Projetos/HealhThesis/README.md)**
+- **[Igniteshop](01_Projetos/Igniteshop/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/IgniteShop)
+- **[ImagereaderTool](01_Projetos/ImagereaderTool/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/ImageReader_Tool)
+- **[JourneyPlannner](01_Projetos/JourneyPlannner/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/Journey_Plannner)
+- **[LogicPocketKnife_CLI](01_Projetos/LogicPocketKnife_CLI/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/MestreJSNodeJs)
+- **[Mangagenai](01_Projetos/Mangagenai/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/MangaGenAI)
+- **[Mestre](01_Projetos/Mestre/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/Mestre)
+- **[MestreJSArchitect](01_Projetos/MestreJSArchitect/README.md)**
+- **[Movienotesapi](01_Projetos/Movienotesapi/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/MovieNotesAPI)
+- **[Nestcleanarchitecture](01_Projetos/Nestcleanarchitecture/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/NestCleanArchitecture)
+- **[Nestcleanrocketseat](01_Projetos/Nestcleanrocketseat/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/NestCleanRocketseat)
+- **[NextjsFundamentals](01_Projetos/NextjsFundamentals/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/NextJS_Fundamentals)
+- **[NodejsStudies](01_Projetos/NodejsStudies/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/NodeJS_Studies)
+- **[NotesApp](01_Projetos/NotesApp/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/Notes_App)
+- **[Pg](01_Projetos/Pg/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/pg)
+- **[PizzaSmart_Specs](01_Projetos/PizzaSmart_Specs/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/MestreJSNodeJs)
+- **[PizzashopWeb](01_Projetos/PizzashopWeb/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/PizzaShop_Web)
+- **[Pizzashoppingapi](01_Projetos/Pizzashoppingapi/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/PizzaShoppingAPI)
+- **[Portfolio_Docs](01_Projetos/Portfolio_Docs/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/MestreJSNodeJs)
+- **[Reactstatemanagement](01_Projetos/Reactstatemanagement/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/ReactStateManagement)
+- **[Restaurantsapp](01_Projetos/Restaurantsapp/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/RestaurantsApp)
+- **[SaasRbacSystem](01_Projetos/SaasRbacSystem/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/SaaS_RBAC_System)
+- **[Serverlesstesting](01_Projetos/Serverlesstesting/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/ServerlessTesting)
+- **[SmartpizzaApp](01_Projetos/SmartpizzaApp/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/SmartPizza_App)
+- **[Tailwindmastery](01_Projetos/Tailwindmastery/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/TailwindMastery)
+- **[Taskmanagementapp](01_Projetos/Taskmanagementapp/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/TaskManagementApp)
+- **[TechDesk_SaaS](01_Projetos/TechDesk_SaaS/README.md)**
+- **[Webdevchallenge](01_Projetos/Webdevchallenge/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/WebDevChallenge)
+- **[YourhotelApp](01_Projetos/YourhotelApp/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/YourHotel_App)
+- **[energy-tracker](01_Projetos/energy-tracker/README.md)**
 ## Metodologia de Uso (Obsidian)
 
 * **Tags**: Utilize tags (`#tag`) no início dos arquivos para conectar conteúdos.
