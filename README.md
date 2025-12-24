@@ -44,7 +44,7 @@ Caixa de entrada para novos assuntos, notas rápidas e temas que ainda não fora
 * **[JourneyPlannner](01_Projetos/JourneyPlannner/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/Journey_Plannner)
 * **[LogicPocketKnife_CLI](01_Projetos/LogicPocketKnife_CLI/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/MestreJSNodeJs)
 * **[Mangagenai](01_Projetos/Mangagenai/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/MangaGenAI)
-* **[Mestre](01_Projetos/Mestre/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/Mestre)
+* **[MestreCLI](01_Projetos/MestreCLI/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/MestreCLI)
 * **[MestreJSArchitect](01_Projetos/MestreJSArchitect/README.md)**
 * **[MestreJS_Template](01_Projetos/MestreJS_Template/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/MestreJS_Template)
 * **[Movienotesapi](01_Projetos/Movienotesapi/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/MovieNotesAPI)
@@ -66,6 +66,7 @@ Caixa de entrada para novos assuntos, notas rápidas e temas que ainda não fora
 * **[Tailwindmastery](01_Projetos/Tailwindmastery/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/TailwindMastery)
 * **[Taskmanagementapp](01_Projetos/Taskmanagementapp/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/TaskManagementApp)
 * **[TechDesk_SaaS](01_Projetos/TechDesk_SaaS/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/TechDesk_SaaS)
+* **[Templates](01_Projetos/Templates/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/MestreJSNodeJs)
 * **[Webdevchallenge](01_Projetos/Webdevchallenge/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/WebDevChallenge)
 * **[YourhotelApp](01_Projetos/YourhotelApp/README.md)** ☁️ [GitHub](https://github.com/fel1pe-r-s/YourHotel_App)
 * **[energy-tracker](01_Projetos/energy-tracker/README.md)**
@@ -207,7 +208,7 @@ Recursos gerais, backups e arquivos que não se encaixam nas outras categorias.
 - **[JourneyPlannner](01_Projetos/JourneyPlannner/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/Journey_Plannner)
 - **[LogicPocketKnife_CLI](01_Projetos/LogicPocketKnife_CLI/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/MestreJSNodeJs)
 - **[Mangagenai](01_Projetos/Mangagenai/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/MangaGenAI)
-- **[Mestre](01_Projetos/Mestre/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/Mestre)
+- **[MestreCLI](01_Projetos/MestreCLI/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/MestreCLI)
 - **[MestreJSArchitect](01_Projetos/MestreJSArchitect/README.md)**
 - **[MestreJS_Template](01_Projetos/MestreJS_Template/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/MestreJS_Template)
 - **[Movienotesapi](01_Projetos/Movienotesapi/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/MovieNotesAPI)
@@ -229,6 +230,7 @@ Recursos gerais, backups e arquivos que não se encaixam nas outras categorias.
 - **[Tailwindmastery](01_Projetos/Tailwindmastery/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/TailwindMastery)
 - **[Taskmanagementapp](01_Projetos/Taskmanagementapp/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/TaskManagementApp)
 - **[TechDesk_SaaS](01_Projetos/TechDesk_SaaS/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/TechDesk_SaaS)
+- **[Templates](01_Projetos/Templates/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/MestreJSNodeJs)
 - **[Webdevchallenge](01_Projetos/Webdevchallenge/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/WebDevChallenge)
 - **[YourhotelApp](01_Projetos/YourhotelApp/README.md)** ☁️ [Remote](https://github.com/fel1pe-r-s/YourHotel_App)
 - **[energy-tracker](01_Projetos/energy-tracker/README.md)**
@@ -242,6 +244,20 @@ Recursos gerais, backups e arquivos que não se encaixam nas outras categorias.
     3. Projetos finalizados ou arquivados podem permanecer em `01_Projetos` ou mover para `03_Arquivos` (Arquivo Morto) se necessário.
 
 ---
+## 🐹 Mestre CLI (Beta)
+
+A ferramenta oficial para gerar novos projetos.
+
+### Instalação (Local)
+1.  Entre na pasta do CLI: `cd 01_Projetos/MestreCLI`
+2.  Compile: `go build -o mestre`
+3.  Execute: `./mestre init`
+
+### Sub-Comandos
+*   `init`: Inicia o wizard interativo para escolher entre Backend, Universal ou Monorepo.
+
+---
+
 ## ⚙️ Configuração de Ambiente (Novo PC)
 
 Se você acabou de clonar este repositório em uma nova máquina, siga estes passos para restaurar todo o ecossistema:
