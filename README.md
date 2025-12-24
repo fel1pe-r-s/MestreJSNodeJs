@@ -246,7 +246,7 @@ Recursos gerais, backups e arquivos que não se encaixam nas outras categorias.
 ---
 ## 🐹 Mestre CLI (Beta)
 
-A ferramenta oficial para gerar novos projetos.
+A ferramenta oficial para gerar novos projetos. Os templates (**Backend, Universal, Monorepo**) agora vivem dentro do CLI (Embedded), garantindo que você sempre gere projetos validados e sem depender de clones externos.
 
 ### Instalação (Compilação)
 

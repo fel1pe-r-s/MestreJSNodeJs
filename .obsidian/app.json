@@ -1,0 +1,10 @@
+{
+  "templateFolderPath": "99_Meta/Templates",
+  "attachmentFolderPath": "99_Meta/Anexos",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "00_Inbox",
+  "useMarkdownLinks": true,
+  "alwaysUpdateLinks": true,
+  "readableLineLength": false,
+  "showLineNumber": false
+}

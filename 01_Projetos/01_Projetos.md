@@ -10,6 +10,72 @@ tags:
 
 ---
 
+## 🛠️ Tech Radar & Stack
+> [!SUMMARY] Tecnologias do Ecossistema
+> Visualização estratégica das tecnologias, padrões e referências técnicas do workspace.
+
+```mermaid
+mindmap
+  root((Mestre Stack))
+    Core Universal
+      TypeScript
+      Node.js
+      Docker
+    Backend
+      NestJS
+      Fastify
+      Prisma
+      Go (CLI)
+    Frontend
+      React
+      Next.js
+      TailwindCSS
+    Arquitetura
+      Clean Arch
+      DDD
+      SOLID
+    Estudos
+      Bun
+      Laravel
+      ElysiaJS
+```
+
+### 🟢 Adote (Core Stack)
+Tecnologias maduras e validadas em produção.
+
+| Tecnologia | Categoria | Projetos de Referência (Exemplos) |
+| :--- | :--- | :--- |
+| **TypeScript** | Lang | *Universal* |
+| **Node.js** | Runtime | *Universal* |
+| **NestJS** | Framework | [[01_Projetos/Nestcleanarchitecture/Nestcleanarchitecture|NestCleanArch]], [[01_Projetos/DesafioGdash202502/DesafioGdash202502|G-Dash]] |
+| **Next.js** | Web | [[01_Projetos/SaasRbacSystem/SaasRbacSystem|SaaS RBAC]], [[01_Projetos/DevstoreEcom/DevstoreEcom|DevStore]] |
+| **Fastify** | Framework | [[01_Projetos/GympassApp/GympassApp|GymPass App]] |
+| **Prisma ORM** | Data | [[01_Projetos/GympassApp/GympassApp|GymPass App]], [[01_Projetos/Nestcleanarchitecture/Nestcleanarchitecture|NestCleanArch]] |
+| **TailwindCSS** | UI | [[01_Projetos/Tailwindmastery/Tailwindmastery|TailwindMastery]], [[01_Projetos/SaasRbacSystem/SaasRbacSystem|SaaS RBAC]] |
+| **Docker** | Infra | [[01_Projetos/MestreCLI/MestreCLI|MestreCLI]] |
+
+### 🔵 Avalie (Promissor)
+Tecnologias em análise ou uso específico.
+
+| Tecnologia | Categoria | Projetos de Referência |
+| :--- | :--- | :--- |
+| **Bun** | Runtime | [[01_Projetos/Apiwithbun/Apiwithbun|ApiWithBun]] |
+| **Go (Golang)** | CLI/Sys | [[01_Projetos/MestreCLI/MestreCLI|MestreCLI]] |
+| **Vite** | Build | [[01_Projetos/DesafioGdash202502/DesafioGdash202502|G-Dash Frontend]] |
+| **Drizzle ORM** | Data | [[01_Projetos/Apiwithbun/Apiwithbun|ApiWithBun]] |
+
+### 🏗️ Arquitetura & Padrões
+| Padrão | Projetos de Referência |
+| :--- | :--- |
+| **Clean Architecture** | [[01_Projetos/CleandddCore/CleandddCore|CleanDDD]], [[01_Projetos/Nestcleanarchitecture/Nestcleanarchitecture|NestCleanArch]] |
+| **DDD** | [[01_Projetos/CleandddCore/CleandddCore|CleanDDD]] |
+| **Modular Monolith** | [[01_Projetos/DesafioGdash202502/DesafioGdash202502|G-Dash]] |
+
+### 🎯 Roadmap de Aprendizado
+> **Foco Atual:** Consolidação de Microsserviços com NestJS e expansão para ecossistema PHP (Laravel).
+
+---
+
 ## 🗺️ Navegação da Pasta
 ```dataview
 LIST FROM "" WHERE file.folder = this.file.folder AND file.name != this.file.name

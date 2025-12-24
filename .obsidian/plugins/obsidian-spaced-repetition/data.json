@@ -1,0 +1,15 @@
+{
+    "flashcardTags": [
+        "flashcard"
+    ],
+    "folderForIntermediateFiles": "99_Meta",
+    "dataStore": "notes",
+    "noteReviewSchedule": {
+        "0": 1,
+        "1": 3,
+        "2": 7
+    },
+    "deckTree": {
+        "toggled": true
+    }
+}
