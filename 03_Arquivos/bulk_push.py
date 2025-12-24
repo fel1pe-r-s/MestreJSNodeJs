@@ -1,7 +1,7 @@
 import os
 import subprocess
 
-PROJECTS_DIR = "/home/felipe/MestreJSNodeJs/01_Projetos"
+PROJECTS_DIR = "/home/felipe/O mestre/MestreJSNodeJs/01_Projetos"
 
 def bulk_push():
     print("Starting Bulk Push for Sub-Projects...")

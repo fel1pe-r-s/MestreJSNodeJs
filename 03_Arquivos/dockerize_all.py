@@ -1,7 +1,7 @@
 import os
 import json
 
-PROJECTS_DIR = "/home/felipe/MestreJSNodeJs/01_Projetos"
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); PROJECTS_DIR = os.path.join(ROOT_DIR, "01_Projetos")
 
 DOCKERFILE_NODE = """FROM node:18-alpine
 WORKDIR /app

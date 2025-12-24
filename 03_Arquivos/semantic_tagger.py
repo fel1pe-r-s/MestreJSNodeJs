@@ -2,7 +2,7 @@ import os
 import json
 import re
 
-ROOT_DIR = "/home/felipe/MestreJSNodeJs"
+ROOT_DIR = "/home/felipe/O mestre/MestreJSNodeJs"
 PROJECTS_DIR = os.path.join(ROOT_DIR, "01_Projetos")
 
 # DEFINITION OF CONCEPTS AND HEURISTICS

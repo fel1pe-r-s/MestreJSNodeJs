@@ -1,7 +1,7 @@
 import os
 import glob
 
-ROOT_DIR = "/home/felipe/MestreJSNodeJs"
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SEARCH_DIRS = [
     os.path.join(ROOT_DIR, "02_Areas"),
     os.path.join(ROOT_DIR, "01_Projetos"),

@@ -41,3 +41,4 @@ Thumbs.db
 # Project Specific (Generated Reports)
 03_Arquivos/*.log
 03_Arquivos/reports/
+.obsidian/

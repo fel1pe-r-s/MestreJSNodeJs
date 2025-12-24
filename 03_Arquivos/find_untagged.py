@@ -1,6 +1,6 @@
 import os
 
-PROJECTS_DIR = "/home/felipe/MestreJSNodeJs/01_Projetos"
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); PROJECTS_DIR = os.path.join(ROOT_DIR, "01_Projetos")
 
 def find_untagged():
     untagged_count = 0

@@ -1,6 +1,6 @@
 import os
 
-ROOT_DIR = "/home/felipe/MestreJSNodeJs"
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 AREAS_DIR = os.path.join(ROOT_DIR, "02_Areas")
 PROJECTS_DIR = os.path.join(ROOT_DIR, "01_Projetos")
 ENTRADA_DIR = os.path.join(ROOT_DIR, "00_Entrada")

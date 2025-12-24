@@ -1,7 +1,7 @@
 import os
 import subprocess
 
-PROJECTS_DIR = "/home/felipe/MestreJSNodeJs/01_Projetos"
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); PROJECTS_DIR = "/home/felipe/O mestre/MestreJSNodeJs/01_Projetos"
 
 def rename_repos():
     print("Starting GitHub Repository Renaming...")

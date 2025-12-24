@@ -3,7 +3,7 @@ import subprocess
 import json
 from datetime import datetime
 
-PROJECTS_DIR = "/home/felipe/MestreJSNodeJs/01_Projetos"
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); PROJECTS_DIR = os.path.join(ROOT_DIR, "01_Projetos")
 REPORT_FILE = "/home/felipe/MestreJSNodeJs/00_Entrada/Security_Report.md"
 
 def run_command(command, cwd):
