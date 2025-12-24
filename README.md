@@ -265,19 +265,36 @@ Se você acabou de clonar este repositório em uma nova máquina, siga estes pas
 1.  **Pré-requisitos**:
     *   Python 3.x instalado.
     *   Node.js & NPM instalados.
+    *   Go (Golang) instalado (para o CLI).
     *   Git & GitHub CLI (`gh`) autenticados.
 
-2.  **Restaurar Projetos**:
-    Execute o script mestre que clonará todos os repositórios remotos para a pasta `01_Projetos`:
+2.  **Clone Mestre (O Hub)**:
+    ```bash
+    git clone https://github.com/fel1pe-r-s/MestreJSNodeJs.git
+    cd MestreJSNodeJs
+    ```
+
+3.  **Restaurar Todos os Projetos**:
+    Este script vai baixar o `MestreCLI`, os Templates e todos os seus projetos:
     ```bash
     python3 03_Arquivos/clone_all_repos.py
     ```
 
-3.  **Atualizar Links**:
-    Para garantir que o README aponte corretamente para os repositórios:
+4.  **Compilar o Mestre CLI**:
+    Agora que o CLI foi baixado, precisamos compilá-lo:
+    ```bash
+    cd 01_Projetos/MestreCLI
+    go build -o mestre
+    sudo mv mestre /usr/local/bin/   # (Opcional: instala globalmente)
+    cd ../..
+    ```
+
+5.  **Atualizar Links do Hub**:
     ```bash
     python3 03_Arquivos/generate_remote_links.py
     ```
+
+Agora você tem a fábrica pronta! Basta rodar `mestre init` em qualquer lugar.
 
 ---
 
