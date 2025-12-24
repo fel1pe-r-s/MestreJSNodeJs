@@ -228,4 +228,48 @@ Recursos gerais, backups e arquivos que não se encaixam nas outras categorias.
     3. Projetos finalizados ou arquivados podem permanecer em `01_Projetos` ou mover para `03_Arquivos` (Arquivo Morto) se necessário.
 
 ---
+## ⚙️ Configuração de Ambiente (Novo PC)
+
+Se você acabou de clonar este repositório em uma nova máquina, siga estes passos para restaurar todo o ecossistema:
+
+1.  **Pré-requisitos**:
+    *   Python 3.x instalado.
+    *   Node.js & NPM instalados.
+    *   Git & GitHub CLI (`gh`) autenticados.
+
+2.  **Restaurar Projetos**:
+    Execute o script mestre que clonará todos os repositórios remotos para a pasta `01_Projetos`:
+    ```bash
+    python3 03_Arquivos/clone_all_repos.py
+    ```
+
+3.  **Atualizar Links**:
+    Para garantir que o README aponte corretamente para os repositórios:
+    ```bash
+    python3 03_Arquivos/generate_remote_links.py
+    ```
+
+---
+
+## 🤖 Automação e Scripts
+
+Este repositório conta com scripts em Python na pasta `03_Arquivos` para facilitar a manutenção:
+
+*   **`clone_all_repos.py`**: Baixa e renomeia (PascalCase) todos os repositórios do seu GitHub.
+*   **`generate_remote_links.py`**: Atualiza este README com links diretos para o GitHub de cada projeto.
+*   **`bulk_commit.py`**: Percorre todas as pastas em `01_Projetos` e realiza commit das alterações locais.
+*   **`bulk_push.py`**: Envia as alterações de todos os sub-projetos para os seus respectivos remotos.
+*   **`semantic_tagger.py`**: (Legado) Gera tags e links bidirecionais entre Projetos e Áreas de Estudo.
+
+**Para sincronizar tudo de uma vez:**
+```bash
+# 1. Commitar tudo localmente
+python3 03_Arquivos/bulk_commit.py
+
+# 2. Enviar para a nuvem
+python3 03_Arquivos/bulk_push.py
+```
+
+---
+
 *Gerado automaticamente por Antigravity*
