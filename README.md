@@ -1,5 +1,17 @@
 # MestreJSNodeJs - Índice de Conhecimento
 
+<!-- DASHBOARD_START -->
+<div align="center">
+
+![Projects](https://img.shields.io/badge/Projetos-49-blue?style=for-the-badge&logo=github)
+![Notes](https://img.shields.io/badge/Notas_de_Estudo-96-green?style=for-the-badge&logo=obsidian)
+![Commits](https://img.shields.io/badge/Commits_Totais-18-orange?style=for-the-badge&logo=git)
+![Last Update](https://img.shields.io/badge/Atualizado_em-2025-12-24_15:35-lightgrey?style=for-the-badge)
+
+</div>
+<!-- DASHBOARD_END -->
+
+
 Este repositório contém todo o meu material de estudos como programador, organizado utilizando a metodologia **P.A.R.A.** (Projects, Areas, Resources, Archives).
 
 ## Estrutura do Projeto

@@ -1,0 +1,37 @@
+{
+    "name": "mestrejs-template",
+    "version": "1.0.0",
+    "description": "Template padrão para projetos MestreJS seguindo Clean Architecture.",
+    "main": "dist/index.js",
+    "type": "module",
+    "scripts": {
+        "dev": "tsx watch src/infra/cli.ts",
+        "build": "tsup src",
+        "start": "node dist/infra/cli.js",
+        "test": "vitest",
+        "test:watch": "vitest",
+        "lint": "eslint src test"
+    },
+    "keywords": [
+        "template",
+        "clean-architecture",
+        "typescript"
+    ],
+    "author": "Felipe",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^20.0.0",
+        "tsup": "^8.0.0",
+        "tsx": "^4.7.0",
+        "typescript": "^5.3.0",
+        "vitest": "^1.2.0",
+        "eslint": "^8.56.0"
+    },
+    "dependencies": {
+        "zod": "^3.22.4"
+    },
+    "engines": {
+        "node": ">=18",
+        "pnpm": ">=8"
+    }
+}
