@@ -1,0 +1,182 @@
+/* ============================================
+   🚀 MestreJS Tech Theme - Plugin Support
+   Customizações para plugins populares
+   ============================================ */
+
+/* === Dataview Plugin === */
+.dataview.table-view-table {
+    border: 1px solid rgba(0, 255, 159, 0.2);
+    border-radius: 6px;
+}
+
+.dataview.table-view-table thead {
+    background: rgba(0, 255, 159, 0.1);
+    border-bottom: 2px solid var(--cyber-green);
+}
+
+.dataview.table-view-table th {
+    color: var(--cyber-green);
+    font-weight: bold;
+    padding: 10px;
+}
+
+.dataview.table-view-table tr:hover {
+    background: rgba(0, 255, 159, 0.05);
+}
+
+.dataview.inline-field-key {
+    color: var(--cyber-blue);
+    font-weight: bold;
+}
+
+.dataview.inline-field-value {
+    color: var(--cyber-green);
+}
+
+/* === Calendar Plugin === */
+.calendar {
+    border: 1px solid rgba(0, 255, 159, 0.2);
+    border-radius: 6px;
+    background: rgba(10, 14, 39, 0.3);
+}
+
+.calendar .day.today {
+    background: rgba(0, 255, 159, 0.2);
+    border: 2px solid var(--cyber-green);
+    box-shadow: 0 0 10px rgba(0, 255, 159, 0.3);
+}
+
+.calendar .day.has-note {
+    color: var(--cyber-blue);
+    font-weight: bold;
+}
+
+/* === Kanban Plugin === */
+.kanban-plugin__board {
+    background: rgba(10, 14, 39, 0.3);
+}
+
+.kanban-plugin__lane {
+    background: rgba(15, 20, 25, 0.5);
+    border: 1px solid rgba(0, 255, 159, 0.2);
+    border-radius: 8px;
+}
+
+.kanban-plugin__lane-title {
+    color: var(--cyber-green);
+    border-bottom: 2px solid var(--cyber-green);
+    font-weight: bold;
+}
+
+.kanban-plugin__item {
+    background: rgba(10, 14, 39, 0.7);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.kanban-plugin__item:hover {
+    border-color: var(--cyber-green);
+    box-shadow: 0 0 15px rgba(0, 255, 159, 0.3);
+    transform: translateY(-2px);
+}
+
+/* === Excalidraw Plugin === */
+.excalidraw {
+    border: 1px solid rgba(0, 255, 159, 0.2);
+    border-radius: 6px;
+}
+
+.excalidraw .Island {
+    background: rgba(10, 14, 39, 0.9);
+    border: 1px solid rgba(0, 255, 159, 0.3);
+}
+
+/* === Tasks Plugin === */
+.tasks-list-text {
+    color: var(--text-normal);
+}
+
+.task-list-item.is-checked {
+    color: #8892b0;
+    text-decoration: line-through;
+}
+
+.task-list-item.is-checked .task-list-item-checkbox {
+    background: var(--cyber-green);
+    box-shadow: 0 0 10px rgba(0, 255, 159, 0.5);
+}
+
+/* === Templater Plugin === */
+.templater-command {
+    color: var(--cyber-purple);
+    background: rgba(189, 0, 255, 0.1);
+    border: 1px solid var(--cyber-purple);
+    border-radius: 4px;
+    padding: 2px 6px;
+}
+
+/* === Obsidian Git Plugin === */
+.git-view-body {
+    background: rgba(10, 14, 39, 0.5);
+}
+
+.git-view-body .tree-item-self:hover {
+    background: rgba(0, 255, 159, 0.1);
+}
+
+.git-view-body .staged {
+    color: var(--cyber-green);
+}
+
+.git-view-body .unstaged {
+    color: var(--cyber-blue);
+}
+
+/* === Sliding Panes Plugin === */
+.workspace-leaf.mod-active .view-header {
+    background: rgba(0, 255, 159, 0.1);
+    border-bottom: 2px solid var(--cyber-green);
+}
+
+/* === Advanced Tables Plugin === */
+.advanced-tables-toolbar {
+    background: rgba(10, 14, 39, 0.9);
+    border: 1px solid rgba(0, 255, 159, 0.3);
+    border-radius: 6px;
+}
+
+/* === Mind Map Plugin === */
+.mindmap-svg {
+    background: rgba(10, 14, 39, 0.3);
+    border-radius: 6px;
+}
+
+.mindmap-node {
+    fill: rgba(0, 255, 159, 0.1);
+    stroke: var(--cyber-green);
+    stroke-width: 2px;
+}
+
+.mindmap-node:hover {
+    fill: rgba(0, 255, 159, 0.2);
+    filter: drop-shadow(0 0 10px rgba(0, 255, 159, 0.5));
+}
+
+/* === Outliner Plugin === */
+.outliner-plugin__list-item.is-collapsed::before {
+    color: var(--cyber-blue);
+}
+
+/* === QuickAdd Plugin === */
+.quickadd-choice {
+    border: 1px solid rgba(0, 255, 159, 0.3);
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.quickadd-choice:hover {
+    background: rgba(0, 255, 159, 0.1);
+    border-color: var(--cyber-green);
+    box-shadow: 0 0 10px rgba(0, 255, 159, 0.2);
+}

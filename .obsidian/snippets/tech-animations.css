@@ -1,0 +1,231 @@
+/* ============================================
+   🚀 MestreJS Tech Theme - Animations
+   Animações e efeitos visuais avançados
+   ============================================ */
+
+/* === Smooth Fade-in for New Elements === */
+.markdown-preview-view>* {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* === Pulse Effect for Active Elements === */
+.nav-file-title.is-active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 60%;
+    background: var(--cyber-green);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+        box-shadow: 0 0 5px var(--cyber-green);
+    }
+
+    50% {
+        opacity: 0.5;
+        box-shadow: 0 0 15px var(--cyber-green);
+    }
+}
+
+/* === Typing Effect for Headers === */
+.markdown-preview-view h1::after {
+    content: '▊';
+    color: var(--cyber-green);
+    animation: blink 1s step-end infinite;
+    margin-left: 5px;
+}
+
+/* === Slide-in for Modals === */
+.modal-container {
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95) translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* === Ripple Effect on Click === */
+.clickable-icon:active,
+button:active {
+    position: relative;
+    overflow: hidden;
+}
+
+.clickable-icon:active::after,
+button:active::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(0, 255, 159, 0.5);
+    transform: translate(-50%, -50%);
+    animation: ripple 0.6s ease-out;
+}
+
+@keyframes ripple {
+    to {
+        width: 200px;
+        height: 200px;
+        opacity: 0;
+    }
+}
+
+/* === Glow Pulse for Links on Hover === */
+.markdown-preview-view a:hover {
+    animation: glowPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+
+    0%,
+    100% {
+        text-shadow: 0 0 8px rgba(0, 255, 159, 0.5);
+    }
+
+    50% {
+        text-shadow: 0 0 15px rgba(0, 255, 159, 0.8);
+    }
+}
+
+/* === Shake Effect for Errors === */
+.notice.mod-error {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-10px);
+    }
+
+    75% {
+        transform: translateX(10px);
+    }
+}
+
+/* === Rotate Icon on Hover === */
+.clickable-icon:hover svg {
+    animation: rotate 0.5s ease-in-out;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* === Bounce Effect for Checkboxes === */
+.markdown-preview-view .task-list-item-checkbox:checked {
+    animation: bounce 0.5s ease-in-out;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* === Gradient Animation for Scrollbar === */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg,
+            var(--cyber-blue),
+            var(--cyber-green),
+            var(--cyber-purple));
+    background-size: 200% 200%;
+    animation: gradientShift 3s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* === Slide-in for Sidebar === */
+.workspace-split.mod-left-split,
+.workspace-split.mod-right-split {
+    animation: slideInSidebar 0.3s ease-out;
+}
+
+@keyframes slideInSidebar {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* === Floating Effect for Tags === */
+.tag:hover {
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
