@@ -1,0 +1,152 @@
+/* ============================================
+   🚀 MestreJS Tech Theme - Advanced Effects
+   Ative este snippet DEPOIS do tech-minimal
+   ============================================ */
+
+/* === Graph View Customization === */
+.graph-view.color-fill-tag {
+    color: var(--cyber-green) !important;
+}
+
+.graph-view.color-fill-attachment {
+    color: var(--cyber-blue) !important;
+}
+
+.graph-view.color-line {
+    color: var(--cyber-purple) !important;
+}
+
+.graph-view.color-circle {
+    color: var(--cyber-green) !important;
+}
+
+/* === Editor Mode (Live Preview) === */
+.cm-header-1 {
+    color: var(--cyber-green) !important;
+    text-shadow: 0 0 8px rgba(0, 255, 159, 0.3);
+}
+
+.cm-header-2 {
+    color: var(--cyber-green) !important;
+    text-shadow: 0 0 6px rgba(0, 255, 159, 0.2);
+}
+
+.cm-header-3 {
+    color: var(--cyber-blue) !important;
+}
+
+.cm-link {
+    color: var(--cyber-blue) !important;
+}
+
+.cm-tag {
+    color: var(--cyber-purple) !important;
+}
+
+/* === Callouts === */
+.callout {
+    border-left: 4px solid var(--cyber-blue);
+    background: rgba(0, 212, 255, 0.08);
+    box-shadow: 0 0 12px rgba(0, 212, 255, 0.15);
+    border-radius: 6px;
+}
+
+.callout[data-callout="warning"],
+.callout[data-callout="caution"] {
+    border-left-color: #ffbe0b;
+    background: rgba(255, 190, 11, 0.08);
+    box-shadow: 0 0 12px rgba(255, 190, 11, 0.15);
+}
+
+.callout[data-callout="error"],
+.callout[data-callout="danger"] {
+    border-left-color: var(--cyber-pink);
+    background: rgba(255, 0, 110, 0.08);
+    box-shadow: 0 0 12px rgba(255, 0, 110, 0.15);
+}
+
+.callout[data-callout="success"],
+.callout[data-callout="check"] {
+    border-left-color: var(--cyber-green);
+    background: rgba(0, 255, 159, 0.08);
+    box-shadow: 0 0 12px rgba(0, 255, 159, 0.15);
+}
+
+.callout[data-callout="info"],
+.callout[data-callout="note"] {
+    border-left-color: var(--cyber-blue);
+    background: rgba(0, 212, 255, 0.08);
+}
+
+/* === Workspace Tabs === */
+.workspace-tab-header.is-active {
+    background: rgba(0, 255, 159, 0.1);
+    border-bottom: 2px solid var(--cyber-green);
+    box-shadow: 0 2px 8px rgba(0, 255, 159, 0.2);
+}
+
+.workspace-tab-header:hover {
+    background: rgba(0, 255, 159, 0.05);
+}
+
+/* === Search Results === */
+.search-result-file-match {
+    background: rgba(0, 255, 159, 0.1);
+    border-left: 3px solid var(--cyber-green);
+}
+
+.search-result-file-match:hover {
+    background: rgba(0, 255, 159, 0.15);
+    box-shadow: 0 0 10px rgba(0, 255, 159, 0.2);
+}
+
+/* === Modals === */
+.modal {
+    border: 1px solid rgba(0, 255, 159, 0.2);
+    box-shadow: 0 0 30px rgba(0, 255, 159, 0.2);
+}
+
+.modal-title {
+    color: var(--cyber-green);
+    text-shadow: 0 0 8px rgba(0, 255, 159, 0.3);
+}
+
+/* === Sidebar === */
+.workspace-leaf-content[data-type="file-explorer"] .nav-folder.is-collapsed .nav-folder-title::before {
+    color: var(--cyber-blue);
+}
+
+/* === Horizontal Rules === */
+.markdown-preview-view hr {
+    border-color: var(--cyber-green);
+    box-shadow: 0 0 8px rgba(0, 255, 159, 0.3);
+}
+
+/* === Highlights === */
+.markdown-preview-view mark {
+    background: rgba(0, 255, 159, 0.2);
+    color: var(--text-normal);
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+/* === Footnotes === */
+.footnote-ref {
+    color: var(--cyber-purple);
+    font-weight: bold;
+}
+
+/* === Embedded Content === */
+.markdown-embed {
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    background: rgba(0, 212, 255, 0.05);
+    border-radius: 6px;
+}
+
+/* === Mermaid Diagrams === */
+.mermaid {
+    background: rgba(10, 14, 39, 0.3);
+    border: 1px solid rgba(0, 255, 159, 0.2);
+    border-radius: 6px;
+    padding: 10px;
+}
