@@ -1,0 +1,146 @@
+/* ============================================
+   🚀 MestreJS Tech Theme - Terminal Mode
+   Editor com aparência de terminal
+   ============================================ */
+
+/* === Terminal-Style Editor === */
+.markdown-source-view.mod-cm6 .cm-editor {
+    background: #0a0e27 !important;
+    font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-scroller {
+    background: #0a0e27 !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line {
+    padding-left: 10px;
+    border-left: 2px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.markdown-source-view.mod-cm6 .cm-activeLine {
+    background: rgba(0, 255, 159, 0.05) !important;
+    border-left-color: var(--cyber-green);
+}
+
+/* === Cursor === */
+.cm-cursor {
+    border-left: 2px solid var(--cyber-green) !important;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
+}
+
+/* === Selection === */
+.cm-selectionBackground {
+    background: rgba(0, 255, 159, 0.2) !important;
+}
+
+/* === Line Numbers === */
+.cm-gutters {
+    background: #0f1419 !important;
+    border-right: 1px solid rgba(0, 255, 159, 0.2);
+    color: #495670;
+}
+
+.cm-activeLineGutter {
+    background: rgba(0, 255, 159, 0.1) !important;
+    color: var(--cyber-green) !important;
+}
+
+/* === Syntax Highlighting === */
+.cm-header {
+    font-weight: bold;
+}
+
+.cm-header-1 {
+    color: var(--cyber-green) !important;
+    font-size: 1.8em;
+}
+
+.cm-header-2 {
+    color: var(--cyber-green) !important;
+    font-size: 1.5em;
+}
+
+.cm-header-3 {
+    color: var(--cyber-blue) !important;
+    font-size: 1.3em;
+}
+
+.cm-link {
+    color: var(--cyber-blue) !important;
+    text-decoration: underline;
+}
+
+.cm-url {
+    color: var(--cyber-purple) !important;
+}
+
+.cm-tag {
+    color: var(--cyber-purple) !important;
+}
+
+.cm-formatting {
+    color: #8892b0 !important;
+}
+
+.cm-comment {
+    color: #495670 !important;
+    font-style: italic;
+}
+
+.cm-strong {
+    color: var(--cyber-green) !important;
+    font-weight: bold;
+}
+
+.cm-em {
+    color: var(--cyber-blue) !important;
+    font-style: italic;
+}
+
+.cm-inline-code {
+    color: var(--cyber-green) !important;
+    background: rgba(0, 255, 159, 0.1);
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+/* === Matching Brackets === */
+.cm-matchingBracket {
+    background: rgba(0, 255, 159, 0.2) !important;
+    outline: 1px solid var(--cyber-green);
+}
+
+/* === Search Highlight === */
+.cm-searchMatch {
+    background: rgba(255, 190, 11, 0.3) !important;
+    outline: 1px solid #ffbe0b;
+}
+
+.cm-searchMatch-selected {
+    background: rgba(0, 255, 159, 0.3) !important;
+    outline: 1px solid var(--cyber-green);
+}
+
+/* === Folded Code === */
+.cm-foldPlaceholder {
+    background: rgba(0, 212, 255, 0.2);
+    border: 1px solid var(--cyber-blue);
+    color: var(--cyber-blue);
+    border-radius: 3px;
+    padding: 0 4px;
+}

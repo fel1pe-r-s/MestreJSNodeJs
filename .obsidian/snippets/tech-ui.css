@@ -1,0 +1,164 @@
+/* ============================================
+   🚀 MestreJS Tech Theme - UI Enhancements
+   Melhorias na interface do usuário
+   ============================================ */
+
+/* === Command Palette === */
+.prompt {
+    border: 1px solid rgba(0, 255, 159, 0.3);
+    box-shadow: 0 0 20px rgba(0, 255, 159, 0.2);
+    background: rgba(10, 14, 39, 0.95);
+}
+
+.prompt-input {
+    border-bottom: 2px solid var(--cyber-green);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.1em;
+}
+
+.prompt-results {
+    border-top: 1px solid rgba(0, 255, 159, 0.2);
+}
+
+.prompt-instruction {
+    color: var(--cyber-blue);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* === Suggestion Items === */
+.suggestion-item {
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.suggestion-item.is-selected {
+    background: rgba(0, 255, 159, 0.15);
+    border-left: 3px solid var(--cyber-green);
+    box-shadow: 0 0 10px rgba(0, 255, 159, 0.2);
+}
+
+.suggestion-item:hover {
+    background: rgba(0, 255, 159, 0.1);
+}
+
+/* === Hotkeys === */
+.suggestion-hotkey {
+    background: rgba(0, 212, 255, 0.2);
+    border: 1px solid var(--cyber-blue);
+    color: var(--cyber-blue);
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85em;
+}
+
+/* === Settings Modal === */
+.modal.mod-settings {
+    border: 1px solid rgba(0, 255, 159, 0.2);
+}
+
+.vertical-tab-header-group-title {
+    color: var(--cyber-green);
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}
+
+.vertical-tab-nav-item {
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.vertical-tab-nav-item.is-active {
+    background: rgba(0, 255, 159, 0.15);
+    border-left: 3px solid var(--cyber-green);
+    box-shadow: 0 0 10px rgba(0, 255, 159, 0.2);
+}
+
+.vertical-tab-nav-item:hover {
+    background: rgba(0, 255, 159, 0.08);
+}
+
+/* === Toggle Switches === */
+.checkbox-container {
+    transition: all 0.3s ease;
+}
+
+.checkbox-container:hover {
+    box-shadow: 0 0 8px rgba(0, 255, 159, 0.2);
+}
+
+.checkbox-container.is-enabled {
+    background: var(--cyber-green);
+    box-shadow: 0 0 10px rgba(0, 255, 159, 0.4);
+}
+
+/* === Dropdowns === */
+.dropdown {
+    border: 1px solid rgba(0, 255, 159, 0.3);
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.dropdown:hover {
+    border-color: var(--cyber-green);
+    box-shadow: 0 0 8px rgba(0, 255, 159, 0.2);
+}
+
+/* === Text Inputs === */
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea {
+    border: 1px solid rgba(0, 255, 159, 0.3);
+    border-radius: 6px;
+    background: rgba(10, 14, 39, 0.5);
+    transition: all 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="search"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border-color: var(--cyber-green);
+    box-shadow: 0 0 10px rgba(0, 255, 159, 0.3);
+    outline: none;
+}
+
+/* === Progress Bars === */
+progress {
+    border: 1px solid rgba(0, 255, 159, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+progress::-webkit-progress-bar {
+    background: rgba(10, 14, 39, 0.5);
+}
+
+progress::-webkit-progress-value {
+    background: linear-gradient(90deg, var(--cyber-blue), var(--cyber-green));
+    box-shadow: 0 0 10px rgba(0, 255, 159, 0.5);
+}
+
+/* === Tooltips === */
+.tooltip {
+    background: rgba(10, 14, 39, 0.95);
+    border: 1px solid var(--cyber-green);
+    box-shadow: 0 0 15px rgba(0, 255, 159, 0.3);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9em;
+}
+
+/* === Notice (Notifications) === */
+.notice {
+    background: rgba(10, 14, 39, 0.95);
+    border: 1px solid var(--cyber-blue);
+    border-left: 4px solid var(--cyber-green);
+    box-shadow: 0 0 20px rgba(0, 255, 159, 0.3);
+    border-radius: 6px;
+}
