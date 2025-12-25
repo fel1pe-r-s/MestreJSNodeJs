@@ -4,21 +4,22 @@
    ============================================ */
 
 /* === Smooth Fade-in for New Elements === */
-.markdown-preview-view>* {
-    animation: fadeIn 0.3s ease-in;
+/* DISABLED: Causes layout issues
+.markdown-preview-view > * {
+  animation: fadeIn 0.3s ease-in;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+*/
 
 /* === Pulse Effect for Active Elements === */
 .nav-file-title.is-active::before {
@@ -56,6 +57,7 @@
 }
 
 /* === Slide-in for Modals === */
+/* DISABLED: Causes layout issues
 .modal-container {
     animation: slideIn 0.3s ease-out;
 }
@@ -71,6 +73,7 @@
         transform: scale(1) translateY(0);
     }
 }
+*/
 
 /* === Ripple Effect on Click === */
 .clickable-icon:active,

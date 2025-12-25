@@ -1,0 +1,82 @@
+/* ============================================
+   🚀 MestreJS Tech Theme - Alternative Colors
+   Paleta de cores alternativa (Azul/Roxo)
+   ============================================ */
+
+/* === Alternative Color Palette === */
+:root {
+    /* Cores Alternativas - Azul/Roxo */
+    --cyber-green: #00d4ff !important;
+    /* Azul primário */
+    --cyber-blue: #bd00ff !important;
+    /* Roxo secundário */
+    --cyber-purple: #ff006e !important;
+    /* Rosa accent */
+
+    /* Override Obsidian defaults */
+    --text-accent: #00d4ff !important;
+    --text-accent-hover: #bd00ff !important;
+    --interactive-accent: #00d4ff !important;
+    --interactive-accent-hover: #bd00ff !important;
+}
+
+/* Headers com nova cor */
+.markdown-preview-view h1,
+.markdown-preview-view h2 {
+    color: #00d4ff !important;
+    border-bottom-color: #00d4ff !important;
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.4) !important;
+}
+
+.markdown-preview-view h3 {
+    color: #bd00ff !important;
+    text-shadow: 0 0 8px rgba(189, 0, 255, 0.3) !important;
+}
+
+/* Links */
+.markdown-preview-view a {
+    color: #bd00ff !important;
+    border-bottom-color: #bd00ff !important;
+}
+
+.markdown-preview-view a:hover {
+    color: #00d4ff !important;
+    border-bottom-color: #00d4ff !important;
+}
+
+/* Code blocks */
+.markdown-preview-view code {
+    background: rgba(0, 212, 255, 0.1) !important;
+    border-color: rgba(0, 212, 255, 0.3) !important;
+    color: #00d4ff !important;
+}
+
+/* Tags */
+.tag {
+    background: rgba(189, 0, 255, 0.15) !important;
+    border-color: #bd00ff !important;
+    color: #bd00ff !important;
+}
+
+.tag:hover {
+    background: rgba(0, 212, 255, 0.2) !important;
+    border-color: #00d4ff !important;
+    color: #00d4ff !important;
+}
+
+/* Active file */
+.nav-file-title.is-active {
+    border-left-color: #00d4ff !important;
+    box-shadow: 0 0 12px rgba(0, 212, 255, 0.3) !important;
+}
+
+/* Checkboxes */
+.markdown-preview-view .task-list-item-checkbox:checked {
+    background: #00d4ff !important;
+    border-color: #00d4ff !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #bd00ff, #00d4ff) !important;
+}
