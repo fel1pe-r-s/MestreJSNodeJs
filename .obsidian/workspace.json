@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Inbox/Analise_05-nest-clean-rockt.md",
+                "file": "02_Areas/Bun/Bun_Runtime.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Analise_05-nest-clean-rockt"
+              "title": "Bun_Runtime"
             }
           }
         ],
@@ -80,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 506.5
+    "width": 333.5
   },
   "right": {
     "id": "1ef17717e001f727",
@@ -171,8 +171,8 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "review-queue-list-view"
+              "icon": "SpacedRepIcon",
+              "title": "Fila de Notas para Revisar"
             }
           },
           {
@@ -223,7 +223,7 @@
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -247,6 +247,13 @@
   },
   "active": "38cfbf65e819d5fb",
   "lastOpenFiles": [
+    "02_Areas/Bun/Bun.md",
+    "02_Areas/Autenticação&autorização/Permissionamento.md",
+    "02_Areas/Autenticação&autorização/Jwt.md",
+    "02_Areas/Autenticação&autorização/Erros de auth.md",
+    "02_Areas/Autenticação&autorização/Autenticação&autorização.md",
+    "03_Arquivos/Templates/IndexCard.md",
+    "00_Inbox/Analise_05-nest-clean-rockt.md",
     "00_Inbox/Analise_05-nest-clean.md",
     "00_Inbox/2025-12-24.md",
     "00_Inbox/00_Inbox.md",
@@ -254,12 +261,7 @@
     "02_Areas/Database/Postgresql/Postgresql docker.md",
     "02_Areas/Database/Postgresql/Postgresql.md",
     "02_Areas/Database/Postgresql/Comandos.md",
-    "02_Areas/Bun/Bun.md",
     "02_Areas/Bun/Bun_Runtime.md",
-    "02_Areas/Autenticação&autorização/Autenticação&autorização.md",
-    "02_Areas/Autenticação&autorização/Erros de auth.md",
-    "02_Areas/Autenticação&autorização/Permissionamento.md",
-    "02_Areas/Autenticação&autorização/Jwt.md",
     "00_Inbox/Analise_api-com-bun.md",
     "01_Projetos/TechDesk_SaaS/frontend/vite.config.ts.timestamp-1766628713875-b60e50b13f2a9.mjs",
     "01_Projetos/Mestre/01_Projetos/01_Projetos.md",
@@ -281,8 +283,6 @@
     "01_Projetos/MestreCLI/main.go",
     "01_Projetos/MestreJS_Template/MestreJS_Template.md",
     "01_Projetos/MestreJS_Template/README.md",
-    "README.md",
-    "01_Projetos/01_Projetos.md",
     "01_Projetos/Pg/00-CAIXA DE ENTRADA/SaaS/mapa.canvas",
     "01_Projetos/Pg/04-ARQUIVOS/Pasted image 20250423101116.png",
     "01_Projetos/Pg/04-ARQUIVOS/Pasted image 20241007131831.png",

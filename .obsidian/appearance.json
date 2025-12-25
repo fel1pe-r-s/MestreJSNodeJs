@@ -6,9 +6,15 @@
   "monospaceFontFamily": "JetBrains Mono, Fira Code, Consolas, monospace",
   "interfaceFontFamily": "Inter, -apple-system, sans-serif",
   "enabledCssSnippets": [
-    "tech-safe"
+    "tech-ui",
+    "tech-safe",
+    "tech-plugins",
+    "tech-colors-alt",
+    "tech-animations",
+    "tech-advanced",
+    "tech-minimal"
   ],
   "translucency": false,
-  "nativeMenus": false,
+  "nativeMenus": true,
   "showViewHeader": true
 }
