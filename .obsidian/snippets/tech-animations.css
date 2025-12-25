@@ -196,22 +196,23 @@ button:active::after {
 }
 
 /* === Slide-in for Sidebar === */
+/* DISABLED: Causes infinite file opening bug
 .workspace-split.mod-left-split,
 .workspace-split.mod-right-split {
-    animation: slideInSidebar 0.3s ease-out;
+  animation: slideInSidebar 0.3s ease-out;
 }
 
 @keyframes slideInSidebar {
-    from {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
+*/
 
 /* === Floating Effect for Tags === */
 .tag:hover {
