@@ -1,0 +1,96 @@
+/* ============================================
+   🚀 MestreJS Tech Theme - Safe Mode
+   Versão sem animações ou transforms
+   ============================================ */
+
+/* === Color Palette === */
+:root {
+    /* Cores Tech - Cinza Escuro */
+    --cyber-green: #00ff9f;
+    --cyber-blue: #00d4ff;
+    --cyber-purple: #bd00ff;
+
+    /* Background Cinza Escuro */
+    --background-primary: #1e1e1e !important;
+    --background-secondary: #252525 !important;
+    --background-modifier-border: #3a3a3a !important;
+
+    /* Override Obsidian defaults */
+    --text-accent: var(--cyber-green);
+    --text-accent-hover: var(--cyber-blue);
+    --interactive-accent: var(--cyber-green);
+    --interactive-accent-hover: var(--cyber-blue);
+}
+
+/* === Headers (sem glow) === */
+.markdown-preview-view h1 {
+    color: var(--cyber-green);
+    border-bottom: 2px solid var(--cyber-green);
+    padding-bottom: 0.3em;
+}
+
+.markdown-preview-view h2 {
+    color: var(--cyber-green);
+    border-bottom: 1px solid rgba(0, 255, 159, 0.3);
+    padding-bottom: 0.2em;
+}
+
+.markdown-preview-view h3 {
+    color: var(--cyber-blue);
+}
+
+/* === Code Blocks === */
+.markdown-preview-view code {
+    background: rgba(0, 255, 159, 0.1);
+    border: 1px solid rgba(0, 255, 159, 0.3);
+    border-radius: 4px;
+    color: var(--cyber-green);
+}
+
+/* === Links === */
+.markdown-preview-view a {
+    color: var(--cyber-blue);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--cyber-blue);
+}
+
+.markdown-preview-view a:hover {
+    color: var(--cyber-green);
+    border-bottom: 1px solid var(--cyber-green);
+}
+
+/* === Tags === */
+.tag {
+    background: rgba(0, 212, 255, 0.15);
+    border: 1px solid var(--cyber-blue);
+    color: var(--cyber-blue);
+    border-radius: 12px;
+}
+
+.tag:hover {
+    background: rgba(0, 255, 159, 0.2);
+    border-color: var(--cyber-green);
+    color: var(--cyber-green);
+}
+
+/* === Active File (SEM ANIMAÇÃO) === */
+.nav-file-title.is-active {
+    background: rgba(0, 255, 159, 0.15);
+    border-left: 3px solid var(--cyber-green);
+}
+
+/* === Checkboxes === */
+.markdown-preview-view .task-list-item-checkbox:checked {
+    background: var(--cyber-green);
+    border-color: var(--cyber-green);
+}
+
+/* === Scrollbar === */
+::-webkit-scrollbar-thumb {
+    background: var(--cyber-green);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--cyber-blue);
+}
