@@ -1,14 +1,5 @@
-**Tags**: #Docker #Markdown
+# Portfolio_Docs
 
-#Portfolio_Docs # Portfolio Docs
+Este projeto foi migrado para um repositório independente.
 
-**Status**: `#Project/Docs` `#Career`
-
-## 📝 Descrição
-Planejamento e documentação do meu Portfólio pessoal, incluindo integração com API do GitHub.
-
-## 🚀 Visualização
-```bash
-docker build -t portfolio-docs .
-docker run -p 8082:8000 portfolio-docs
-```
+Referência externa: [Repositório GitHub](git@github.com:fel1pe-r-s/Portfolio_Docs.git)

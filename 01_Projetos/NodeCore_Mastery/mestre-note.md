@@ -1,1 +1,0 @@
-Anotação importante sobre Node Core
