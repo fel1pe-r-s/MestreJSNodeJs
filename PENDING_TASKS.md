@@ -1,35 +1,40 @@
-# Futuras Tarefas e Pendências
+# Futuras Tarefas e Pendências por Projeto
 
-Este documento consolida todas as tarefas pendentes identificadas em planos de implementação e walkthroughs anteriores.
+Este documento detalha o que ainda falta ser feito em cada projeto dentro do ecossistema MestreJSNodeJs, agrupado por área de interesse.
 
-## Infraestrutura e Backend
-- [ ] Explorar rotas do backend e estrutura (Health check em /)
-- [ ] Verificar implementação do endpoint /weather/logs
-- [ ] Implementar Schema do Banco de Dados: `wallets`, `transactions`, `credits_packages`
-- [ ] Lógica para Compra de Créditos e integração Stripe PIX
-- [ ] Dedução de saldo ao solicitar serviço
-- [ ] Webhooks para liberação automática de saldo
-- [ ] Dashboard Admin: CRUD de Serviços e Planos
-- [ ] API de rastreamento de status de pedidos
-- [ ] Integração WhatsApp API (Envio de resultados em Imagem/PDF)
-- [ ] Docker Nginx: Criar Dockerfile de produção
+---
 
-## Frontend e UI/UX
-- [ ] Interface da Carteira (Wallet) e histórico de transações
-- [ ] Formulário de solicitação de serviço (Área do Cliente)
-- [ ] Dashboard Admin (Estatísticas e Gestão de Usuários)
-- [ ] Correção de erros de tipagem no Next.js (Cannot find name 'h1')
-- [ ] Validar Fluxo de Cadastro e Login com Testes E2E
-- [ ] Templates Vite (Opcional/Futuro)
+## 🚀 SaaS_Plataforma (Monorepo Laravel + Vue/Next.js)
+Este é o projeto principal de infraestrutura comercial.
+- [ ] **Banco de Dados**: Implementar schema para `wallets`, `transactions` e `credits_packages`.
+- [ ] **Pagamentos**: Finalizar integração com Stripe PIX e configuração de Webhooks para liberação automática.
+- [ ] **Lógica de Negócio**: Implementar dedução de saldo por requisição de serviço e fluxo de pedidos (`Pending` -> `In Progress` -> `Completed`).
+- [ ] **Área do Administrador**: Criar CRUD de Serviços/Planos e Dashboard de estatísticas/gestão de usuários.
+- [ ] **Área do Cliente**: Desenvolver formulário de solicitação de serviço e histórico da carteira.
+- [ ] **Integrações**: Integrar WhatsApp API para envio de resultados (Imagem/PDF) e API de rastreamento.
+- [ ] **Infraestrutura**: Criar Dockerfile de produção com Nginx e configurar pipeline de deploy.
 
-## Testes e Qualidade
-- [ ] Identificar e corrigir erros de tipo em spec files (`weather.service.spec.ts`)
-- [ ] Garantir que todos os testes passem (Unitários, Integração e E2E)
-- [ ] Verificar ausência de erros de linting em todo o monorepo
-- [ ] Teste E2E: Fluxo completo (Cliente compra crédito -> faz pedido -> vê status)
+## 🩺 HealhThesis / WellnessThesis
+Focado em portal de saúde e blog moderno.
+- [ ] **Tipagem**: Corrigir erro "Cannot find name 'h1'" no TypeScript.
+- [ ] **Autenticação**: Resolver redirecionamento pós-login no Next.js (Edge Runtime JWT handling).
+- [ ] **Estilização**: Garantir consistência do Tailwind CSS em todas as páginas e componentes.
 
-## Documentação e Gestão
-- [ ] Finalizar documentação técnica de cada subprojeto
-- [ ] Configurar CI/CD para deploy automático na VPS
-- [ ] Manter links de repositórios independentes atualizados
+## 🌡️ Collector / Worker Service (Monitoramento de Clima)
+Sistema distribuído com RabbitMQ e NestJS.
+- [ ] **Qualidade**: Resolver erros de tipo nos arquivos de teste (`weather.service.spec.ts`).
+- [ ] **Endpoints**: Implementar e verificar o endpoint `/weather/logs`.
+- [ ] **Saúde do Sistema**: Adicionar rota de health check (`/`) no backend.
 
+## 📊 Gdashchallenge
+Desafio de dashboard e análise de dados.
+- [ ] **Fluxo**: Revisar e finalizar o walkthrough conforme planejado nos documentos de planejamento.
+- [ ] **Testes**: Validar fluxos críticos conforme plano de implementação e2e.
+
+## 🛠️ Geral e Infraestrutura do Monorepo
+- [ ] **Documentação**: Atualizar os links de referência de todos os subprojetos em `01_Projetos`.
+- [ ] **CI/CD**: Configurar GitHub Actions globais para linting e validação de todos os repositórios migrados.
+- [ ] **Docker**: Padronizar `docker-compose.yml` para desenvolvimento local rápido de todo o ambiente.
+
+---
+*Mantenha este arquivo atualizado conforme as tarefas forem sendo concluídas.*
