@@ -1,40 +1,62 @@
-# Futuras Tarefas e Pendências por Projeto
+# 📅 MestreJSNodeJs - Master Task List (Migration Ready)
 
-Este documento detalha o que ainda falta ser feito em cada projeto dentro do ecossistema MestreJSNodeJs, agrupado por área de interesse.
+Este documento centraliza todas as pendências críticas de todos os subprojetos. Foi estruturado para que você possa simplesmente fornecer este arquivo (ou as partes relevantes) a um assistente de IA em sua nova máquina para retomar o trabalho instantaneamente.
+
+---
+
+## 🚀 SaaS_Plataforma (Laravel 12 + Vue/Next.js)
+**Contexto**: Infraestrutura básica com Sail/Docker está funcional. Autenticação básica implementada.
+
+### Tarefas Pendentes:
+- [ ] **Módulo Financeiro**:
+    - **Ações**: Criar migrations para \`wallets\`, \`transactions\`, \`credits_packages\`.
+    - **Prompt**: "Implemente o sistema de carteira (Wallet) no Laravel. Crie as tabelas de carteira vinculada ao usuário, histórico de transações e pacotes de créditos. Use Clean Architecture para separar a lógica de crédito/débito em Use Cases."
+- [ ] **Integração Stripe (PIX)**:
+    - **Ações**: Instalar SDK Stripe, configurar chaves no .env, criar Webhook handler.
+    - **Prompt**: "Configure o Stripe para aceitar pagamentos via PIX. Implemente o Webhook que escuta o evento \`payment_intent.succeeded\` e adiciona automaticamente os créditos à carteira do usuário."
+- [ ] **Fluxo de Pedidos & WhatsApp**:
+    - **Ações**: Criar CRUD de Serviços, Order tracking e integração com API de WhatsApp.
+    - **Prompt**: "Desenvolva o sistema de ordens de serviço. Quando um cliente faz um pedido, o saldo deve ser descontado. Ao finalizar, envie o resultado (PDF/Imagem) via API do WhatsApp."
 
 ---
 
-## 🚀 SaaS_Plataforma (Monorepo Laravel + Vue/Next.js)
-Este é o projeto principal de infraestrutura comercial.
-- [ ] **Banco de Dados**: Implementar schema para `wallets`, `transactions` e `credits_packages`.
-- [ ] **Pagamentos**: Finalizar integração com Stripe PIX e configuração de Webhooks para liberação automática.
-- [ ] **Lógica de Negócio**: Implementar dedução de saldo por requisição de serviço e fluxo de pedidos (`Pending` -> `In Progress` -> `Completed`).
-- [ ] **Área do Administrador**: Criar CRUD de Serviços/Planos e Dashboard de estatísticas/gestão de usuários.
-- [ ] **Área do Cliente**: Desenvolver formulário de solicitação de serviço e histórico da carteira.
-- [ ] **Integrações**: Integrar WhatsApp API para envio de resultados (Imagem/PDF) e API de rastreamento.
-- [ ] **Infraestrutura**: Criar Dockerfile de produção com Nginx e configurar pipeline de deploy.
+## 🛠️ MestreCLI (Go)
+**Contexto**: CLI funcional para gerar scaffolds. V3 com suporte a Vite em andamento.
 
-## 🩺 HealhThesis / WellnessThesis
-Focado em portal de saúde e blog moderno.
-- [ ] **Tipagem**: Corrigir erro "Cannot find name 'h1'" no TypeScript.
-- [ ] **Autenticação**: Resolver redirecionamento pós-login no Next.js (Edge Runtime JWT handling).
-- [ ] **Estilização**: Garantir consistência do Tailwind CSS em todas as páginas e componentes.
-
-## 🌡️ Collector / Worker Service (Monitoramento de Clima)
-Sistema distribuído com RabbitMQ e NestJS.
-- [ ] **Qualidade**: Resolver erros de tipo nos arquivos de teste (`weather.service.spec.ts`).
-- [ ] **Endpoints**: Implementar e verificar o endpoint `/weather/logs`.
-- [ ] **Saúde do Sistema**: Adicionar rota de health check (`/`) no backend.
-
-## 📊 Gdashchallenge
-Desafio de dashboard e análise de dados.
-- [ ] **Fluxo**: Revisar e finalizar o walkthrough conforme planejado nos documentos de planejamento.
-- [ ] **Testes**: Validar fluxos críticos conforme plano de implementação e2e.
-
-## 🛠️ Geral e Infraestrutura do Monorepo
-- [ ] **Documentação**: Atualizar os links de referência de todos os subprojetos em `01_Projetos`.
-- [ ] **CI/CD**: Configurar GitHub Actions globais para linting e validação de todos os repositórios migrados.
-- [ ] **Docker**: Padronizar `docker-compose.yml` para desenvolvimento local rápido de todo o ambiente.
+### Tarefas Pendentes:
+- [ ] **Docker Nginx Preview**:
+    - **Ações**: Adicionar template de Nginx para projetos Vite no gerador.
+    - **Prompt**: "No MestreCLI (Go), atualize o template de Frontend Vite para incluir um Dockerfile multi-stage. O primeiro estágio faz o build (Node), o segundo serve os arquivos estáticos usando Nginx Alpine."
+- [ ] **Integração Fullstack (Hono + Next.js)**:
+    - **Ações**: Finalizar lógica do Wizard para integrar Hono como adapter de API no Next.js.
 
 ---
-*Mantenha este arquivo atualizado conforme as tarefas forem sendo concluídas.*
+
+## 🩺 HealhThesis / WellnessThesis (Next.js 14)
+**Contexto**: Blog para marketing de afiliados. Erro de tipagem pendente.
+
+### Tarefas Pendentes:
+- [ ] **Correção de Tipagem JSX**:
+    - **Prompt**: "Corrija o erro 'Cannot find name h1' no arquivo [page.tsx](file:///home/felipe/O%20mestre/MestreJSNodeJs/01_Projetos/WellnessThesis/src/app/post/%5Bslug%5D/page.tsx). Certifique-se de que o \`tsconfig.json\` está configurado com \`"jsx": "preserve"\` ou \`"jsx": "react-jsx"\` e importe React explicitamente se necessário."
+- [ ] **Ads & CTA Engine**:
+    - **Prompt**: "Implemente o sistema dinâmico de anúncios. Os posts devem permitir a inserção de scripts de Ads em slots específicos (Top, In-feed, Bottom) e botões de CTA personalizados para afiliados."
+
+---
+
+## 🌡️ Collector / Worker Service (NestJS + Python + Go)
+**Contexto**: Sistema distribuído meteorológico. Conexão RabbitMQ URI corrigida.
+
+### Tarefas Pendentes:
+- [ ] **Monitoramento de Clima (\`/weather/logs\`)**:
+    - **Prompt**: "No backend NestJS, implemente o endpoint \`GET /weather/logs\` que retorna o histórico de dados processados pelo Worker (armazenados no MongoDB). Adicione paginação e filtros por data/cidade."
+- [ ] **Saúde do Sistema (Health Checks)**:
+    - **Prompt**: "Adicione \`Terminus\` ao NestJS para criar uma rota de health check (\`/prod/health\`) que verifica a conexão com o MongoDB e o RabbitMQ."
+
+---
+
+## 📁 Referência Visual Arquitetural
+![Esquema de Infraestrutura](/home/felipe/.gemini/antigravity/brain/b47fb4c5-da01-4c1a-acc4-ede3cd92b256/uploaded_image_1766626063390.png)
+*Diagrama de referência para a arquitetura SaaS e Monorepo.*
+
+---
+*Gerado em 01/01/2026 para fins de migração de ambiente.*
