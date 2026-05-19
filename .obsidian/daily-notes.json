@@ -1,5 +1,5 @@
 {
   "format": "YYYY-MM-DD",
-  "template": "99_Meta/Templates/Template_Nota_Diaria",
+  "template": "attachments/Templates/Template_Nota_Diaria",
   "folder": "00_Inbox"
 }
