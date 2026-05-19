@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Inbox/2025-12-29.md",
+                "file": "00_Inbox/2026-05-18.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "2025-12-29"
+              "title": "2026-05-18"
             }
           }
         ],
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00_Inbox/00_Inbox.md",
+                "file": "00_Inbox/2026-05-18.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +106,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos para 00_Inbox"
+              "title": "Links inversos para 2026-05-18"
             }
           },
           {
@@ -169,10 +169,15 @@
             "id": "223a4a9fe76c280d",
             "type": "leaf",
             "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "SpacedRepIcon",
-              "title": "Fila de Notas para Revisar"
+              "type": "markdown",
+              "state": {
+                "file": "00_Inbox/2026-04-25.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-04-25"
             }
           },
           {
@@ -181,8 +186,8 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "review-queue-list-view"
+              "icon": "SpacedRepIcon",
+              "title": "Fila de Notas para Revisar"
             }
           },
           {
@@ -218,8 +223,8 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {},
-              "icon": "SpacedRepIcon",
-              "title": "Fila de Notas para Revisar"
+              "icon": "lucide-ghost",
+              "title": "review-queue-list-view"
             }
           },
           {
@@ -228,17 +233,26 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-ghost",
+              "title": "git-view"
+            }
+          },
+          {
+            "id": "86acdbd1fefa8ead",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Fila de Notas para Revisar"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -250,15 +264,29 @@
       "command-palette:Abrir paleta de comandos": false,
       "bases:Criar nova base": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-kanban:Criar um novo quadro": false,
+      "obsidian-kanban:Create new board": false,
       "obsidian-git:Open Git source control": false,
       "obsidian-spaced-repetition:Revisar flashcards": false
     }
   },
-  "active": "223a4a9fe76c280d",
+  "active": "31ad7b10f7e76c63",
   "lastOpenFiles": [
-    "01_Projetos/HealhThesis/README.md",
+    "02_Areas/Programação/javaScript/TypeScript/optional.ts.md",
+    "00_Inbox/2026-05-18.md",
+    "02_Areas/Programação/javaScript/TypeScript/Decoreitor no TypeScript.md",
+    "02_Areas/JavaScript/JavaScript.md",
+    "02_Areas/Nextjs/Server C&A.md",
+    "02_Areas/Nextjs/Nextjs.md",
+    "02_Areas/Nextjs/Next-Auth.md",
+    "02_Areas/Tests/Tests.md",
+    "02_Areas/Tests/cypress.md",
+    "02_Areas/TypeScript/TypeScript.md",
+    "02_Areas/Bun/Bun_Runtime.md",
+    "02_Areas/Bun/Bun.md",
+    "00_Inbox/2026-05-09.md",
     "00_Inbox/2025-12-29.md",
+    "00_Inbox/2026-04-25.md",
+    "01_Projetos/HealhThesis/README.md",
     "01_Projetos/HealhThesis/node_modules/@esbuild/netbsd-arm64",
     "01_Projetos/HealhThesis/node_modules/@esbuild/linux-s390x",
     "01_Projetos/HealhThesis/node_modules/@esbuild/linux-riscv64",
@@ -279,20 +307,6 @@
     "01_Projetos/GDashChallenge.md",
     "01_Projetos/NodeCore_Mastery/mestre-note.md",
     "MestreJSNodeJs.md",
-    "00_Inbox/2025-12-27.md",
-    "00_Inbox/2025-12-26.md",
-    "00_Inbox/Event Loop & Arquitetura.md",
-    "00_Inbox/00_Inbox.md",
-    "02_Areas.md/idioma/ingles.md",
-    "02_Areas.md/02_Areas.md.md",
-    "02_Areas.md/idioma/idioma.md",
-    "02_Areas.md",
-    "00_Inbox/Analise_masterizando-tailwindcss.md",
-    "00_Inbox/Analise_05-nest-clean.md",
-    "00_Inbox/2025-12-24.md",
-    "Excalidraw/Drawing 2025-12-26 08.59.48.excalidraw.md",
-    "Excalidraw/Excalidraw.md",
-    "README.md",
     "01_Projetos/TaskManagerAPI/node_modules/retry/equation.gif",
     "01_Projetos/TaskManagerAPI/node_modules/steed/assets/banner.svg",
     "01_Projetos/TaskManagerAPI/node_modules/steed/assets/banner.png",

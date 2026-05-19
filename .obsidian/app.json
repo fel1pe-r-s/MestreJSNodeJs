@@ -6,5 +6,6 @@
   "useMarkdownLinks": true,
   "alwaysUpdateLinks": true,
   "readableLineLength": false,
-  "showLineNumber": false
+  "showLineNumber": false,
+  "openBehavior": "daily"
 }
