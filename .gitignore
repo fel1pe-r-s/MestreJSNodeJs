@@ -33,14 +33,19 @@ pnpm-debug.log*
 *.swo
 
 # Obsidian
-
-
-# OS
-Thumbs.db
-
-# Project Specific (Generated Reports)
-03_Arquivos/*.log
-03_Arquivos/reports/
-# SaaS_Plataforma/
-
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/workspaces.json
+.obsidian/graph.json
+.obsidian/backlink.json
+.obsidian/appearance.json
+.obsidian/hotkeys.json
+.obsidian/waypoint.json
+.obsidian/core-plugins.json
+.obsidian/app.json
 .obsidian/plugins/remotely-save/
+
+# Obsidian Sync/Conflict files
+**/*(conflict*).json
+**/*conflict*.json
+.obsidian/sync-conflict-*
